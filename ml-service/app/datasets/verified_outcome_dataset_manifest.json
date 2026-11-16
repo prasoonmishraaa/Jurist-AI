@@ -1,0 +1,74 @@
+{
+  "builder_version": "v4.4.0-verified-outcome-builder",
+  "audit_summary": {
+    "candidate_records_count": 150,
+    "human_approved_count": 0,
+    "pending_review_count": 150,
+    "uncertain_count": 0,
+    "rejected_count": 0,
+    "verified_class_distribution": {},
+    "candidate_class_distribution": {
+      "unknown_truncated_text": 17,
+      "appeal_allowed": 12,
+      "appeal_dismissed": 12,
+      "partly_allowed": 7,
+      "interlocutory_reference": 12,
+      "petition_allowed": 6,
+      "remanded": 1,
+      "petition_dismissed": 5,
+      "ambiguous": 1,
+      "disposed_procedural": 19,
+      "dismissed_as_infructuous": 10,
+      "withdrawn": 6,
+      "disposed_with_substantive_directions": 10,
+      "unknown": 21,
+      "bail_granted": 9,
+      "bail_rejected": 2
+    },
+    "cases_with_sufficient_pre_decision_text": 150,
+    "duplicate_or_related_cases": [
+      [
+        "OIL-DHC-DLHC010440622015",
+        "OIL-DHC-DLHC012615072014"
+      ]
+    ],
+    "source_files": {
+      "open_india_law_sample_150": {
+        "exists": true,
+        "count": 150,
+        "path": "C:\\Users\\Gungun\\Downloads\\Jurist-AI-Team\\ml-service\\app\\datasets\\open_india_law_sample_150.json"
+      },
+      "outcome_label_review_v2": {
+        "exists": true,
+        "count": 150,
+        "path": "C:\\Users\\Gungun\\Downloads\\Jurist-AI-Team\\ml-service\\app\\datasets\\outcome_label_review_v2.csv"
+      }
+    },
+    "text_length_stats": {
+      "min": 508,
+      "max": 40000,
+      "mean": 13409.5,
+      "near_cap_cases": 17
+    },
+    "landmark_corpus_audit": {
+      "exists": true,
+      "count": 27,
+      "outcomes": {
+        "Allowed": 26,
+        "Dismissed": 1
+      },
+      "note": "Curated landmark corpus; 26 Allowed vs 1 Dismissed (extreme class imbalance and target leakage)."
+    }
+  },
+  "minimum_approved_required": 30,
+  "human_approved_found": 0,
+  "dataset_status": "unfinalized_pending_human_review",
+  "is_training_eligible": false,
+  "records": [],
+  "missing_requirements": [
+    "Requires at least 30 human-approved outcome records with signed-off review_status = 'approved'.",
+    "Currently 0 of 150 candidate records are approved (150 pending review).",
+    "Qualified legal annotator must complete batch review in outcome_label_review_v2.csv.",
+    "Qualitative research fallback mode must be preserved in prediction APIs."
+  ]
+}

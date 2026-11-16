@@ -1,0 +1,50 @@
+{
+  "indexName": "Jurist-AI Dense Semantic Precedent Index",
+  "indexVersion": "v1.4.0-unified",
+  "buildTimestamp": "2026-11-13T14:16:41.882954Z",
+  "modelName": "BAAI/bge-small-en-v1.5",
+  "modelRevision": "main (ONNX CPU)",
+  "modelFileSha256": "828e1496d7fabb79cfa4dcd84fa38625c0d3d21da474a00f08db0f559940cf35",
+  "tokenizerSha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+  "corpusSourcePath": "app\\datasets\\unified_judgments.json",
+  "corpusSha256": "3f82ccd395a6c6d174d61a29d3b369db2ed20f06f32084cdd8c415adceb8a5f9",
+  "totalUniqueJudgments": 176,
+  "totalPassages": 771,
+  "embeddingMatrixShape": [
+    771,
+    384
+  ],
+  "embeddingDtype": "float32",
+  "embeddingSizeBytes": 1184256,
+  "chunkingStatistics": {
+    "totalPassages": 771,
+    "uniqueCases": 176,
+    "meanPassagesPerCase": 4.38,
+    "passagesByDataset": {
+      "indian_judgments_landmark": 54,
+      "open_india_law_sample": 717
+    },
+    "passagesByCourt": {
+      "Supreme Court of India": 293,
+      "High Court of Delhi": 237,
+      "High Court of Bombay": 2,
+      "High Court of Judicature at Allahabad": 239
+    },
+    "summaryPassages": 176,
+    "substantivePassages": 595,
+    "lengthStats": {
+      "minChars": 135,
+      "maxChars": 2083,
+      "meanChars": 568.7
+    }
+  },
+  "skippedRecords": [
+    {
+      "excludedId": "OIL-DHC-DLHC012615072014",
+      "reason": "Identical judgment text hash (6dc94155d44c...) to primary record 'OIL-DHC-DLHC010440622015'. Connected batch proceeding.",
+      "retainedId": "OIL-DHC-DLHC010440622015",
+      "title": "W.P.(C)/9114/2014 of RAM PHAL Vs GOVERNMENT OF NCT OF DELHI & ANR."
+    }
+  ],
+  "targetOutcomeSanitization": "ENABLED (no target labels Allowed/Dismissed in passage text)"
+}
