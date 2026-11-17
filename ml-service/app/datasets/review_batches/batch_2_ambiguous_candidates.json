@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "batch_name": "Batch 2: Ambiguous Candidates",
+    "generated_at": "2026-11-13T18:25:38.104384",
+    "record_count": 1,
+    "review_status": "pending_human_review",
+    "protocol_reference": "ml-service/app/prediction/outcome_annotation_guidelines.md"
+  },
+  "records": [
+    {
+      "case_id": "OIL-SC-1994_INSC_388",
+      "case_title": "M/S NOVOPAN INDIA LTD., HYDERABAD versus COLLECTOR OF CENTRAL EXCISE AND CUSTOMS, HYDERABAD",
+      "court": "Supreme Court of India",
+      "decision_date": "1994-09-14",
+      "proceeding_type": "appellate_proceeding",
+      "original_disposition": "ambiguous",
+      "normalized_disposition": "ambiguous",
+      "successful_party": "unresolved",
+      "original_disposition_phrase": "appeal is allowed; appeal fails and is dismissed; Appeal dismissed; disposed of accordingly",
+      "matched_text": "is disposed of accordingly.",
+      "source_start_offset": 28336,
+      "source_end_offset": 28359,
+      "procedural_role": "unresolved",
+      "parser_confidence": 0.4,
+      "recommended_action": "INSPECT CONTRADICTION: Check whether judgment had multiple appeals with split holdings or hypothetical conditional phrases.",
+      "evidence_reference": "Chars 28336:28359",
+      "human_approved_label": "",
+      "human_successful_party": "",
+      "human_notes": "",
+      "reviewer_reference": "",
+      "review_status": "pending_review",
+      "ambiguity_reason": "Contradictory orders detected in concluding text: 'appeal_allowed' and 'appeal_dismissed'."
+    }
+  ]
+}

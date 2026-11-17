@@ -1,0 +1,73 @@
+name: JURIST AI Continuous Integration
+
+on:
+  push:
+    branches: [main, develop, backend, frontend, ml-service]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  test-ml-service:
+    name: NLP & Precedent Engine Tests
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ml-service
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install ML Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Python ML/NLP Tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Run Model Evaluation
+        run: python app/evaluation/evaluate_models.py
+
+  test-and-build-backend:
+    name: Backend API Tests & Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Backend Dependencies
+        run: npm install
+        working-directory: backend
+
+      - name: Run Backend Unit & Integration Tests
+        run: npm test
+        working-directory: backend
+
+      - name: Compile Backend TypeScript
+        run: npm run build
+        working-directory: backend
+
+  build-frontend:
+    name: Frontend React/Vite Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Frontend Dependencies
+        run: npm install
+        working-directory: frontend
+
+      - name: Build Frontend Application
+        run: npm run build
+        working-directory: frontend

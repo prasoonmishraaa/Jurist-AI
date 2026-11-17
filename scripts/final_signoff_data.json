@@ -1,0 +1,105 @@
+{
+  "verifiedAt": "2026-11-14T20:18:28.429Z",
+  "ports": {
+    "ml": {
+      "port": 8000,
+      "status": 200,
+      "service": "Jurist-AI ML & NLP Engine"
+    },
+    "backend": {
+      "port": 5001,
+      "status": 200,
+      "persistence": "mongodb"
+    },
+    "frontend": {
+      "port": 5173,
+      "status": 200,
+      "isHtml": true
+    }
+  },
+  "graphSummary": {
+    "totalNodes": 1,
+    "validNodes": 1,
+    "factsLinked": 1,
+    "statutesLinked": 1,
+    "precedentsLinked": 1,
+    "groundsLinked": 1,
+    "nodes": [
+      {
+        "traceId": "trace-arg-notice-necessity",
+        "groundNumber": "Ground 1",
+        "fact": "The applicant was arrested on 15 August 2024 by local police for alleged offences under Sections 318(4) and 316(2) of the Bharatiya Nyaya Sanhita 2023.",
+        "classification": "Party allegation",
+        "statutoryProvision": "Section 35 BNSS, 2023 (from 01.07.2024) OR Sections 41 & 41A CrPC, 1973 (date-dependent); Article 21, Constitution of India",
+        "statutoryRegime": "uncertain_missing_dates",
+        "precedent": "Satender Kumar Antil v. Central Bureau of Investigation and Anr.",
+        "citation": "(2022) 10 SCC 51; 2022 INSC 690",
+        "officialSourceVerified": true,
+        "groundSnippet": "DRAFT RESEARCH SUBMISSION (Verify FIR offences & registration date before finalizing): 1. THAT witho",
+        "reliability": "moderate_confidence"
+      }
+    ]
+  },
+  "domainResults": [
+    {
+      "caseName": "Criminal Case (Section 47 BNSS Arrest & Remand)",
+      "category": "Criminal Law",
+      "domainDetected": "criminal",
+      "modelA": "petition_allowed",
+      "modelAScore": 0.289,
+      "modelB": "accused",
+      "modelBScore": 0.304,
+      "modelBAbstained": false,
+      "modelBDomainStatus": "supported",
+      "domainLimitation": null
+    },
+    {
+      "caseName": "Civil Writ Case (Article 226 Biometric Privacy Writ)",
+      "category": "Constitutional Law",
+      "domainDetected": "civil_writ",
+      "modelA": "petition_allowed",
+      "modelAScore": 0.421,
+      "modelB": "petitioner",
+      "modelBScore": 0.349,
+      "modelBAbstained": false,
+      "modelBDomainStatus": "domain_limited",
+      "domainLimitation": "Domain Limitation: Party identities 'accused' and 'state_prosecution' are specific to criminal proceedings and are legally inapplicable to civil and constitutional writ litigation. Model B taxonomy contains criminal classes which do not apply to this proceeding."
+    },
+    {
+      "caseName": "Civil Writ Case (Aarav Mehta Arrest Brief Framed as Civil Writ)",
+      "category": "Civil Writ",
+      "domainDetected": "civil_writ",
+      "modelA": "petition_allowed",
+      "modelAScore": 0.308,
+      "modelB": "domain_abstained",
+      "modelBScore": 0,
+      "modelBAbstained": true,
+      "modelBDomainStatus": "domain_limited",
+      "domainLimitation": "Domain Limitation: Party identities 'accused' and 'state_prosecution' are specific to criminal proceedings and are legally inapplicable to civil and constitutional writ litigation. Model B taxonomy contains criminal classes which do not apply to this proceeding."
+    },
+    {
+      "caseName": "Commercial Civil Case (Arbitration Act Section 8 Dispute)",
+      "category": "Corporate & Commercial Law",
+      "domainDetected": "commercial_civil",
+      "modelA": "petition_allowed",
+      "modelAScore": 0.294,
+      "modelB": "respondent",
+      "modelBScore": 0.299,
+      "modelBAbstained": false,
+      "modelBDomainStatus": "domain_limited",
+      "domainLimitation": "Domain Limitation: Party identities 'accused' and 'state_prosecution' are specific to criminal proceedings and are legally inapplicable to civil and constitutional writ litigation. Model B taxonomy contains criminal classes which do not apply to this proceeding."
+    }
+  ],
+  "outcomePredictorReadiness": {
+    "pipelineVersion": "v4.4.0-verified-pipeline",
+    "isTrained": true,
+    "predictionMode": "statistical_verified",
+    "verifiedDataStatus": {
+      "candidateRecords": 150,
+      "humanApprovedRecords": 46,
+      "pendingReviewRecords": 104,
+      "modelAEligible": 43,
+      "modelBEligible": 37
+    }
+  }
+}

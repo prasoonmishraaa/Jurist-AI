@@ -1,0 +1,2717 @@
+{
+  "evaluationTimestamp": "2026-11-13T14:20:45Z",
+  "corpusSize": 176,
+  "passageCount": 771,
+  "configurations": {
+    "tfidf": {
+      "engine": "TF-IDF alone",
+      "k": 5,
+      "corpusSize": 176,
+      "totalQueries": 15,
+      "hitRate": 0.8667,
+      "precisionAtK": 0.2533,
+      "recallAtK": 0.8333,
+      "mrr": 0.8333,
+      "ndcgAtK": 0.8244,
+      "latency_avg_ms": 20.1,
+      "latency_p50_ms": 15.24,
+      "latency_p95_ms": 46.56,
+      "perQueryResults": [
+        {
+          "queryId": "BENCH-Q01",
+          "query": "Accused arrested in an alleged cheating matter without being furnished written grounds of arrest at the time of arrest and remanded to custody in violation of Article 22(1)",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2025-026",
+            "SC-2025-027",
+            "SC-2024-025",
+            "SC-2023-024"
+          ],
+          "retrievedIds": [
+            "SC-2025-026",
+            "SC-2025-027",
+            "SC-2023-024",
+            "SC-2024-025",
+            "SC-2022-023"
+          ],
+          "retrievedScores": [
+            0.655,
+            0.6136,
+            0.5903,
+            0.5558,
+            0.4574
+          ],
+          "matchedExpected": [
+            "SC-2025-026",
+            "SC-2025-027",
+            "SC-2023-024",
+            "SC-2024-025"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.8,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q02",
+          "query": "Application for regular bail in an offence punishable under 7 years where accused cooperated with investigation and satisfies triple test of not being flight risk",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2022-023",
+            "SC-1978-014"
+          ],
+          "retrievedIds": [
+            "OIL-AHC-UPHC020699502022",
+            "OIL-AHC-UPHC020075772022",
+            "OIL-AHC-UPHC020422532022"
+          ],
+          "retrievedScores": [
+            0.0764,
+            0.0582,
+            0.0521
+          ],
+          "matchedExpected": [],
+          "missedExpected": [
+            "SC-2022-023",
+            "SC-1978-014"
+          ],
+          "precisionAtK": 0.0,
+          "recallAtK": 0.0,
+          "reciprocalRank": 0.0,
+          "ndcgAtK": 0.0,
+          "isHit": false
+        },
+        {
+          "queryId": "BENCH-Q03",
+          "query": "Police officer refuses to register First Information Report under Section 154 despite written complaint disclosing cognizable offence",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2013-004"
+          ],
+          "retrievedIds": [
+            "SC-2013-004",
+            "OIL-AHC-UPHC020075772022",
+            "SC-1990-009"
+          ],
+          "retrievedScores": [
+            0.6419,
+            0.1202,
+            0.0895
+          ],
+          "matchedExpected": [
+            "SC-2013-004"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q04",
+          "query": "Violation of mandatory arrest procedure custodial violence failure to prepare arrest memo and inform family under Article 21 and 22",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-1996-012",
+            "SC-1978-010"
+          ],
+          "retrievedIds": [
+            "SC-1996-012",
+            "SC-2022-023",
+            "SC-2014-003",
+            "SC-2025-026",
+            "SC-2025-027"
+          ],
+          "retrievedScores": [
+            0.5009,
+            0.4684,
+            0.4557,
+            0.4356,
+            0.3816
+          ],
+          "matchedExpected": [
+            "SC-1996-012"
+          ],
+          "missedExpected": [
+            "SC-1978-010"
+          ],
+          "precisionAtK": 0.2,
+          "recallAtK": 0.5,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.8262,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q05",
+          "query": "Mechanical arrest of husband and relatives under Section 498A IPC without prior notice of appearance under Section 41A CrPC",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2014-003",
+            "SC-2022-023"
+          ],
+          "retrievedIds": [
+            "SC-2014-003",
+            "SC-2025-026",
+            "SC-2022-023",
+            "SC-2025-027",
+            "SC-2024-025"
+          ],
+          "retrievedScores": [
+            0.7153,
+            0.578,
+            0.567,
+            0.5469,
+            0.4563
+          ],
+          "matchedExpected": [
+            "SC-2014-003",
+            "SC-2022-023"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.9639,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q06",
+          "query": "Quashing of criminal proceedings under Section 482 CrPC where FIR arises purely from civil commercial breach of contract without dishonest intention at inception",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-1990-009"
+          ],
+          "retrievedIds": [
+            "SC-1990-009",
+            "OIL-AHC-UPHC020386362022",
+            "OIL-AHC-UPHC020639252022",
+            "OIL-DHC-DLHC015857912015",
+            "SC-2013-004"
+          ],
+          "retrievedScores": [
+            0.5629,
+            0.097,
+            0.0917,
+            0.0839,
+            0.0807
+          ],
+          "matchedExpected": [
+            "SC-1990-009"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q07",
+          "query": "Dishonour of cheque under Section 138 Negotiable Instruments Act drawer signed blank security cheque and claims statutory presumption under Section 139 is rebutted",
+          "domain": "Banking & Negotiable Instruments",
+          "expectedIds": [
+            "SC-2019-007",
+            "SC-2010-008"
+          ],
+          "retrievedIds": [
+            "SC-2019-007",
+            "SC-2010-008",
+            "OIL-DHC-DLHC010437372016"
+          ],
+          "retrievedScores": [
+            0.8178,
+            0.7269,
+            0.0657
+          ],
+          "matchedExpected": [
+            "SC-2019-007",
+            "SC-2010-008"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q08",
+          "query": "State surveillance bulk interception of telecommunication metadata and phone tapping infringing fundamental right to privacy under Article 21 and proportionality standard",
+          "domain": "Constitutional Law",
+          "expectedIds": [
+            "SC-2017-001",
+            "SC-1978-010"
+          ],
+          "retrievedIds": [
+            "SC-2017-001",
+            "SC-2023-019",
+            "OIL-SC-2015_INSC_559",
+            "SC-1978-010"
+          ],
+          "retrievedScores": [
+            0.6529,
+            0.1056,
+            0.0819,
+            0.0521
+          ],
+          "matchedExpected": [
+            "SC-2017-001",
+            "SC-1978-010"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.9448,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q09",
+          "query": "Criminal prosecution for social media post causing annoyance challenged for vagueness overbreadth and chilling effect on freedom of speech under Article 19(1)(a)",
+          "domain": "Cyber & Information Technology Law",
+          "expectedIds": [
+            "SC-2015-002"
+          ],
+          "retrievedIds": [
+            "BOM-2023-017",
+            "SC-2015-002",
+            "OIL-SC-2015_INSC_559"
+          ],
+          "retrievedScores": [
+            0.1823,
+            0.0825,
+            0.0556
+          ],
+          "matchedExpected": [
+            "SC-2015-002"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 0.5,
+          "ndcgAtK": 0.6309,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q10",
+          "query": "Reference of commercial dispute to arbitration under Section 8 and Section 11 of Arbitration and Conciliation Act where landlord tenant or arbitrability is contested",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "SC-2020-013"
+          ],
+          "retrievedIds": [
+            "SC-2020-013",
+            "SC-2014-020",
+            "OIL-DHC-DLHC015354202015",
+            "OIL-DHC-DLHC010433222016"
+          ],
+          "retrievedScores": [
+            0.6079,
+            0.5929,
+            0.1425,
+            0.0623
+          ],
+          "matchedExpected": [
+            "SC-2020-013"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q11",
+          "query": "Challenge to domestic arbitral award under Section 34 of Arbitration Act on grounds of patent illegality and perversity violating public policy of India",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "SC-2014-020"
+          ],
+          "retrievedIds": [
+            "SC-2014-020",
+            "SC-2020-013"
+          ],
+          "retrievedScores": [
+            0.7077,
+            0.4849
+          ],
+          "matchedExpected": [
+            "SC-2014-020"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q12",
+          "query": "Interim injunction against deceptive similarity well known trademark infringement and dilution in commercial passing off action",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "DEL-2022-016"
+          ],
+          "retrievedIds": [
+            "DEL-2022-016"
+          ],
+          "retrievedScores": [
+            0.5334
+          ],
+          "matchedExpected": [
+            "DEL-2022-016"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q13",
+          "query": "Constitutional validity of instant triple talaq talaq-e-biddat challenged as manifestly arbitrary and violative of fundamental right to equality under Article 14",
+          "domain": "Family Law",
+          "expectedIds": [
+            "SC-2017-006"
+          ],
+          "retrievedIds": [
+            "SC-1978-010",
+            "SC-2023-019",
+            "SC-2018-005",
+            "SC-1997-011"
+          ],
+          "retrievedScores": [
+            0.0834,
+            0.0764,
+            0.0649,
+            0.0643
+          ],
+          "matchedExpected": [],
+          "missedExpected": [
+            "SC-2017-006"
+          ],
+          "precisionAtK": 0.0,
+          "recallAtK": 0.0,
+          "reciprocalRank": 0.0,
+          "ndcgAtK": 0.0,
+          "isHit": false
+        },
+        {
+          "queryId": "BENCH-Q14",
+          "query": "Constitutional challenge to criminalization of consensual adult same-sex relationships under Section 377 IPC violating Article 14 15 and 21",
+          "domain": "Constitutional Law",
+          "expectedIds": [
+            "SC-2018-005"
+          ],
+          "retrievedIds": [
+            "SC-2018-005",
+            "SC-1978-010",
+            "SC-1997-011"
+          ],
+          "retrievedScores": [
+            0.3335,
+            0.0821,
+            0.0819
+          ],
+          "matchedExpected": [
+            "SC-2018-005"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q15",
+          "query": "Workplace sexual harassment of women employee guidelines enforcement of fundamental rights under Article 14 19 and 21 in absence of enacted legislation",
+          "domain": "Labour & Service Law",
+          "expectedIds": [
+            "SC-1997-011"
+          ],
+          "retrievedIds": [
+            "SC-1997-011",
+            "SC-1978-010",
+            "SC-2018-005"
+          ],
+          "retrievedScores": [
+            0.346,
+            0.1525,
+            0.1023
+          ],
+          "matchedExpected": [
+            "SC-1997-011"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        }
+      ],
+      "init_ms": 1747.05
+    },
+    "bm25": {
+      "engine": "BM25 alone",
+      "k": 5,
+      "corpusSize": 176,
+      "totalQueries": 15,
+      "hitRate": 0.8667,
+      "precisionAtK": 0.2267,
+      "recallAtK": 0.7833,
+      "mrr": 0.75,
+      "ndcgAtK": 0.7367,
+      "latency_avg_ms": 9.21,
+      "latency_p50_ms": 9.19,
+      "latency_p95_ms": 10.65,
+      "perQueryResults": [
+        {
+          "queryId": "BENCH-Q01",
+          "query": "Accused arrested in an alleged cheating matter without being furnished written grounds of arrest at the time of arrest and remanded to custody in violation of Article 22(1)",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2025-026",
+            "SC-2025-027",
+            "SC-2024-025",
+            "SC-2023-024"
+          ],
+          "retrievedIds": [
+            "SC-2023-024",
+            "SC-2025-026",
+            "OIL-SC-2016_INSC_1151",
+            "OIL-AHC-UPHC020699502022",
+            "SC-2025-027"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.8488,
+            0.7519,
+            0.6665,
+            0.6441
+          ],
+          "matchedExpected": [
+            "SC-2023-024",
+            "SC-2025-026",
+            "SC-2025-027"
+          ],
+          "missedExpected": [
+            "SC-2024-025"
+          ],
+          "precisionAtK": 0.6,
+          "recallAtK": 0.75,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.696,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q02",
+          "query": "Application for regular bail in an offence punishable under 7 years where accused cooperated with investigation and satisfies triple test of not being flight risk",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2022-023",
+            "SC-1978-014"
+          ],
+          "retrievedIds": [
+            "OIL-AHC-UPHC020699502022",
+            "OIL-AHC-UPHC020075772022",
+            "OIL-SC-2016_INSC_1151",
+            "OIL-DHC-DLHC010614922013",
+            "OIL-AHC-UPHC020639252022"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.5597,
+            0.4648,
+            0.455,
+            0.4428
+          ],
+          "matchedExpected": [],
+          "missedExpected": [
+            "SC-2022-023",
+            "SC-1978-014"
+          ],
+          "precisionAtK": 0.0,
+          "recallAtK": 0.0,
+          "reciprocalRank": 0.0,
+          "ndcgAtK": 0.0,
+          "isHit": false
+        },
+        {
+          "queryId": "BENCH-Q03",
+          "query": "Police officer refuses to register First Information Report under Section 154 despite written complaint disclosing cognizable offence",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2013-004"
+          ],
+          "retrievedIds": [
+            "OIL-AHC-UPHC020075772022",
+            "SC-2013-004",
+            "SC-1990-009",
+            "OIL-DHC-DLHC015857912015",
+            "OIL-DHC-DLHC011637222016"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.922,
+            0.6267,
+            0.5951,
+            0.5932
+          ],
+          "matchedExpected": [
+            "SC-2013-004"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 0.5,
+          "ndcgAtK": 0.6309,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q04",
+          "query": "Violation of mandatory arrest procedure custodial violence failure to prepare arrest memo and inform family under Article 21 and 22",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-1996-012",
+            "SC-1978-010"
+          ],
+          "retrievedIds": [
+            "SC-1996-012",
+            "SC-2025-026",
+            "SC-2024-025",
+            "OIL-AHC-UPHC020699502022",
+            "OIL-DHC-DLHC011780892016"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.6072,
+            0.5186,
+            0.3926,
+            0.3476
+          ],
+          "matchedExpected": [
+            "SC-1996-012"
+          ],
+          "missedExpected": [
+            "SC-1978-010"
+          ],
+          "precisionAtK": 0.2,
+          "recallAtK": 0.5,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.8262,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q05",
+          "query": "Mechanical arrest of husband and relatives under Section 498A IPC without prior notice of appearance under Section 41A CrPC",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2014-003",
+            "SC-2022-023"
+          ],
+          "retrievedIds": [
+            "SC-2014-003",
+            "OIL-AHC-UPHC020699502022",
+            "OIL-AHC-UPHC020075772022",
+            "SC-2022-023",
+            "SC-2025-026"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.5114,
+            0.4735,
+            0.4374,
+            0.4207
+          ],
+          "matchedExpected": [
+            "SC-2014-003",
+            "SC-2022-023"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.9448,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q06",
+          "query": "Quashing of criminal proceedings under Section 482 CrPC where FIR arises purely from civil commercial breach of contract without dishonest intention at inception",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-1990-009"
+          ],
+          "retrievedIds": [
+            "OIL-DHC-DLHC015857912015",
+            "OIL-AHC-UPHC020639252022",
+            "OIL-AHC-UPHC020699502022",
+            "OIL-DHC-DLHC011058852016",
+            "OIL-AHC-UPHC020447492016"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.9343,
+            0.8741,
+            0.8413,
+            0.7815
+          ],
+          "matchedExpected": [],
+          "missedExpected": [
+            "SC-1990-009"
+          ],
+          "precisionAtK": 0.0,
+          "recallAtK": 0.0,
+          "reciprocalRank": 0.0,
+          "ndcgAtK": 0.0,
+          "isHit": false
+        },
+        {
+          "queryId": "BENCH-Q07",
+          "query": "Dishonour of cheque under Section 138 Negotiable Instruments Act drawer signed blank security cheque and claims statutory presumption under Section 139 is rebutted",
+          "domain": "Banking & Negotiable Instruments",
+          "expectedIds": [
+            "SC-2019-007",
+            "SC-2010-008"
+          ],
+          "retrievedIds": [
+            "SC-2019-007",
+            "SC-2010-008",
+            "OIL-DHC-DLHC010437372016",
+            "OIL-DHC-DLHC011117752016",
+            "OIL-DHC-DLHC010110302013"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.5368,
+            0.4007,
+            0.1904,
+            0.1857
+          ],
+          "matchedExpected": [
+            "SC-2019-007",
+            "SC-2010-008"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q08",
+          "query": "State surveillance bulk interception of telecommunication metadata and phone tapping infringing fundamental right to privacy under Article 21 and proportionality standard",
+          "domain": "Constitutional Law",
+          "expectedIds": [
+            "SC-2017-001",
+            "SC-1978-010"
+          ],
+          "retrievedIds": [
+            "OIL-SC-2015_INSC_559",
+            "SC-2017-001",
+            "SC-2023-019",
+            "ALL-2020-022",
+            "OIL-SC-2003_INSC_88"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.99,
+            0.4896,
+            0.4797,
+            0.4178
+          ],
+          "matchedExpected": [
+            "SC-2017-001"
+          ],
+          "missedExpected": [
+            "SC-1978-010"
+          ],
+          "precisionAtK": 0.2,
+          "recallAtK": 0.5,
+          "reciprocalRank": 0.5,
+          "ndcgAtK": 0.5213,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q09",
+          "query": "Criminal prosecution for social media post causing annoyance challenged for vagueness overbreadth and chilling effect on freedom of speech under Article 19(1)(a)",
+          "domain": "Cyber & Information Technology Law",
+          "expectedIds": [
+            "SC-2015-002"
+          ],
+          "retrievedIds": [
+            "OIL-SC-2015_INSC_559",
+            "BOM-2023-017",
+            "OIL-SC-1973_INSC_247",
+            "SC-2015-002",
+            "OIL-SC-2011_INSC_609"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.9759,
+            0.5228,
+            0.4821,
+            0.4465
+          ],
+          "matchedExpected": [
+            "SC-2015-002"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 0.25,
+          "ndcgAtK": 0.4307,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q10",
+          "query": "Reference of commercial dispute to arbitration under Section 8 and Section 11 of Arbitration and Conciliation Act where landlord tenant or arbitrability is contested",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "SC-2020-013"
+          ],
+          "retrievedIds": [
+            "SC-2020-013",
+            "OIL-DHC-DLHC015354202015",
+            "SC-2014-020",
+            "OIL-SC-2022_INSC_130",
+            "OIL-SC-2000_INSC_110"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.9389,
+            0.9011,
+            0.8787,
+            0.7944
+          ],
+          "matchedExpected": [
+            "SC-2020-013"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q11",
+          "query": "Challenge to domestic arbitral award under Section 34 of Arbitration Act on grounds of patent illegality and perversity violating public policy of India",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "SC-2014-020"
+          ],
+          "retrievedIds": [
+            "SC-2014-020",
+            "OIL-SC-2022_INSC_130",
+            "OIL-SC-2003_INSC_88",
+            "OIL-SC-2018_INSC_178",
+            "OIL-AHC-UPHC020261932002"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.4214,
+            0.2899,
+            0.2856,
+            0.2634
+          ],
+          "matchedExpected": [
+            "SC-2014-020"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q12",
+          "query": "Interim injunction against deceptive similarity well known trademark infringement and dilution in commercial passing off action",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "DEL-2022-016"
+          ],
+          "retrievedIds": [
+            "DEL-2022-016",
+            "OIL-SC-2015_INSC_559",
+            "OIL-SC-1989_INSC_3",
+            "OIL-SC-2006_INSC_78",
+            "BOM-2023-017"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.5001,
+            0.4281,
+            0.3789,
+            0.3074
+          ],
+          "matchedExpected": [
+            "DEL-2022-016"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q13",
+          "query": "Constitutional validity of instant triple talaq talaq-e-biddat challenged as manifestly arbitrary and violative of fundamental right to equality under Article 14",
+          "domain": "Family Law",
+          "expectedIds": [
+            "SC-2017-006"
+          ],
+          "retrievedIds": [
+            "SC-2017-006",
+            "SC-2018-005",
+            "OIL-SC-2015_INSC_559",
+            "OIL-SC-2003_INSC_88",
+            "SC-1997-011"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.4508,
+            0.4464,
+            0.4405,
+            0.3647
+          ],
+          "matchedExpected": [
+            "SC-2017-006"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q14",
+          "query": "Constitutional challenge to criminalization of consensual adult same-sex relationships under Section 377 IPC violating Article 14 15 and 21",
+          "domain": "Constitutional Law",
+          "expectedIds": [
+            "SC-2018-005"
+          ],
+          "retrievedIds": [
+            "SC-2018-005",
+            "OIL-DHC-DLHC011058852016",
+            "OIL-SC-2016_INSC_1151",
+            "OIL-DHC-DLHC010794172016",
+            "OIL-DHC-DLHC011426812016"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.3454,
+            0.3446,
+            0.3342,
+            0.3332
+          ],
+          "matchedExpected": [
+            "SC-2018-005"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q15",
+          "query": "Workplace sexual harassment of women employee guidelines enforcement of fundamental rights under Article 14 19 and 21 in absence of enacted legislation",
+          "domain": "Labour & Service Law",
+          "expectedIds": [
+            "SC-1997-011"
+          ],
+          "retrievedIds": [
+            "SC-1997-011",
+            "OIL-SC-2003_INSC_88",
+            "SC-2018-005",
+            "OIL-SC-2015_INSC_559",
+            "OIL-SC-1998_INSC_267"
+          ],
+          "retrievedScores": [
+            0.99,
+            0.4506,
+            0.3288,
+            0.3042,
+            0.2771
+          ],
+          "matchedExpected": [
+            "SC-1997-011"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        }
+      ],
+      "init_ms": 2041.04
+    },
+    "2way_rrf": {
+      "engine": "TF-IDF + BM25 (2-way RRF)",
+      "k": 5,
+      "corpusSize": 176,
+      "totalQueries": 15,
+      "hitRate": 0.8667,
+      "precisionAtK": 0.24,
+      "recallAtK": 0.8,
+      "mrr": 0.7389,
+      "ndcgAtK": 0.7422,
+      "latency_avg_ms": 470.24,
+      "latency_p50_ms": 483.85,
+      "latency_p95_ms": 558.88,
+      "perQueryResults": [
+        {
+          "queryId": "BENCH-Q01",
+          "query": "Accused arrested in an alleged cheating matter without being furnished written grounds of arrest at the time of arrest and remanded to custody in violation of Article 22(1)",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2025-026",
+            "SC-2025-027",
+            "SC-2024-025",
+            "SC-2023-024"
+          ],
+          "retrievedIds": [
+            "SC-2025-026",
+            "SC-2023-024",
+            "SC-2025-027",
+            "SC-2024-025",
+            "OIL-AHC-UPHC020699502022"
+          ],
+          "retrievedScores": [
+            0.9423,
+            0.9349,
+            0.9131,
+            0.8917,
+            0.8727
+          ],
+          "matchedExpected": [
+            "SC-2025-026",
+            "SC-2023-024",
+            "SC-2025-027",
+            "SC-2024-025"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.8,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.955,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q02",
+          "query": "Application for regular bail in an offence punishable under 7 years where accused cooperated with investigation and satisfies triple test of not being flight risk",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2022-023",
+            "SC-1978-014"
+          ],
+          "retrievedIds": [
+            "OIL-AHC-UPHC020699502022",
+            "OIL-AHC-UPHC020075772022",
+            "OIL-DHC-DLHC011488012016",
+            "OIL-AHC-UPHC020422532022",
+            "OIL-SC-1996_INSC_503"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9347,
+            0.8597,
+            0.8515,
+            0.8414
+          ],
+          "matchedExpected": [],
+          "missedExpected": [
+            "SC-2022-023",
+            "SC-1978-014"
+          ],
+          "precisionAtK": 0.0,
+          "recallAtK": 0.0,
+          "reciprocalRank": 0.0,
+          "ndcgAtK": 0.0,
+          "isHit": false
+        },
+        {
+          "queryId": "BENCH-Q03",
+          "query": "Police officer refuses to register First Information Report under Section 154 despite written complaint disclosing cognizable offence",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2013-004"
+          ],
+          "retrievedIds": [
+            "OIL-AHC-UPHC020075772022",
+            "SC-2013-004",
+            "SC-1990-009",
+            "OIL-DHC-DLHC015857912015",
+            "OIL-AHC-UPHC020639252022"
+          ],
+          "retrievedScores": [
+            0.9423,
+            0.9423,
+            0.9198,
+            0.9055,
+            0.8848
+          ],
+          "matchedExpected": [
+            "SC-2013-004"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 0.5,
+          "ndcgAtK": 0.6309,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q04",
+          "query": "Violation of mandatory arrest procedure custodial violence failure to prepare arrest memo and inform family under Article 21 and 22",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-1996-012",
+            "SC-1978-010"
+          ],
+          "retrievedIds": [
+            "SC-1996-012",
+            "SC-2025-026",
+            "SC-2024-025",
+            "SC-2025-027",
+            "SC-2023-024"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9201,
+            0.8989,
+            0.8782,
+            0.8586
+          ],
+          "matchedExpected": [
+            "SC-1996-012"
+          ],
+          "missedExpected": [
+            "SC-1978-010"
+          ],
+          "precisionAtK": 0.2,
+          "recallAtK": 0.5,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.8262,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q05",
+          "query": "Mechanical arrest of husband and relatives under Section 498A IPC without prior notice of appearance under Section 41A CrPC",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2014-003",
+            "SC-2022-023"
+          ],
+          "retrievedIds": [
+            "SC-2014-003",
+            "SC-2025-026",
+            "SC-2022-023",
+            "OIL-AHC-UPHC020075772022",
+            "SC-2025-027"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9131,
+            0.9127,
+            0.8798,
+            0.8667
+          ],
+          "matchedExpected": [
+            "SC-2014-003",
+            "SC-2022-023"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.9639,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q06",
+          "query": "Quashing of criminal proceedings under Section 482 CrPC where FIR arises purely from civil commercial breach of contract without dishonest intention at inception",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-1990-009"
+          ],
+          "retrievedIds": [
+            "OIL-DHC-DLHC015857912015",
+            "OIL-AHC-UPHC020639252022",
+            "OIL-AHC-UPHC020386362022",
+            "SC-1990-009",
+            "OIL-DHC-DLHC011058852016"
+          ],
+          "retrievedScores": [
+            0.9277,
+            0.9273,
+            0.8998,
+            0.8889,
+            0.8788
+          ],
+          "matchedExpected": [
+            "SC-1990-009"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 0.25,
+          "ndcgAtK": 0.4307,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q07",
+          "query": "Dishonour of cheque under Section 138 Negotiable Instruments Act drawer signed blank security cheque and claims statutory presumption under Section 139 is rebutted",
+          "domain": "Banking & Negotiable Instruments",
+          "expectedIds": [
+            "SC-2019-007",
+            "SC-2010-008"
+          ],
+          "retrievedIds": [
+            "SC-2019-007",
+            "SC-2010-008",
+            "OIL-DHC-DLHC010437372016",
+            "OIL-DHC-DLHC011117752016",
+            "OIL-DHC-DLHC010110302013"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9347,
+            0.9198,
+            0.9055,
+            0.8915
+          ],
+          "matchedExpected": [
+            "SC-2019-007",
+            "SC-2010-008"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q08",
+          "query": "State surveillance bulk interception of telecommunication metadata and phone tapping infringing fundamental right to privacy under Article 21 and proportionality standard",
+          "domain": "Constitutional Law",
+          "expectedIds": [
+            "SC-2017-001",
+            "SC-1978-010"
+          ],
+          "retrievedIds": [
+            "SC-2017-001",
+            "OIL-SC-2015_INSC_559",
+            "SC-2023-019",
+            "SC-1997-011",
+            "SC-1978-014"
+          ],
+          "retrievedScores": [
+            0.9423,
+            0.9349,
+            0.9273,
+            0.8848,
+            0.8715
+          ],
+          "matchedExpected": [
+            "SC-2017-001"
+          ],
+          "missedExpected": [
+            "SC-1978-010"
+          ],
+          "precisionAtK": 0.2,
+          "recallAtK": 0.5,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.8262,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q09",
+          "query": "Criminal prosecution for social media post causing annoyance challenged for vagueness overbreadth and chilling effect on freedom of speech under Article 19(1)(a)",
+          "domain": "Cyber & Information Technology Law",
+          "expectedIds": [
+            "SC-2015-002"
+          ],
+          "retrievedIds": [
+            "BOM-2023-017",
+            "OIL-SC-2015_INSC_559",
+            "SC-2015-002",
+            "OIL-SC-1973_INSC_247",
+            "SC-2018-005"
+          ],
+          "retrievedScores": [
+            0.9423,
+            0.9349,
+            0.9201,
+            0.8798,
+            0.8727
+          ],
+          "matchedExpected": [
+            "SC-2015-002"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 0.3333,
+          "ndcgAtK": 0.5,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q10",
+          "query": "Reference of commercial dispute to arbitration under Section 8 and Section 11 of Arbitration and Conciliation Act where landlord tenant or arbitrability is contested",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "SC-2020-013"
+          ],
+          "retrievedIds": [
+            "SC-2020-013",
+            "OIL-DHC-DLHC015354202015",
+            "SC-2014-020",
+            "OIL-DHC-DLHC010433222016",
+            "OIL-SC-2022_INSC_130"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9273,
+            0.9273,
+            0.8917,
+            0.8788
+          ],
+          "matchedExpected": [
+            "SC-2020-013"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q11",
+          "query": "Challenge to domestic arbitral award under Section 34 of Arbitration Act on grounds of patent illegality and perversity violating public policy of India",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "SC-2014-020"
+          ],
+          "retrievedIds": [
+            "SC-2014-020",
+            "OIL-SC-2022_INSC_130",
+            "OIL-SC-2006_INSC_78",
+            "SC-2020-013",
+            "OIL-SC-2003_INSC_88"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9273,
+            0.8649,
+            0.8643,
+            0.8624
+          ],
+          "matchedExpected": [
+            "SC-2014-020"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q12",
+          "query": "Interim injunction against deceptive similarity well known trademark infringement and dilution in commercial passing off action",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "DEL-2022-016"
+          ],
+          "retrievedIds": [
+            "DEL-2022-016",
+            "OIL-SC-2015_INSC_559",
+            "BOM-2023-017",
+            "OIL-SC-1989_INSC_3",
+            "OIL-SC-2006_INSC_78"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9273,
+            0.9131,
+            0.9057,
+            0.8917
+          ],
+          "matchedExpected": [
+            "DEL-2022-016"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q13",
+          "query": "Constitutional validity of instant triple talaq talaq-e-biddat challenged as manifestly arbitrary and violative of fundamental right to equality under Article 14",
+          "domain": "Family Law",
+          "expectedIds": [
+            "SC-2017-006"
+          ],
+          "retrievedIds": [
+            "SC-2018-005",
+            "SC-1978-010",
+            "SC-1997-011",
+            "SC-2023-019",
+            "OIL-SC-2015_INSC_559"
+          ],
+          "retrievedScores": [
+            0.9273,
+            0.9075,
+            0.8985,
+            0.8934,
+            0.8924
+          ],
+          "matchedExpected": [],
+          "missedExpected": [
+            "SC-2017-006"
+          ],
+          "precisionAtK": 0.0,
+          "recallAtK": 0.0,
+          "reciprocalRank": 0.0,
+          "ndcgAtK": 0.0,
+          "isHit": false
+        },
+        {
+          "queryId": "BENCH-Q14",
+          "query": "Constitutional challenge to criminalization of consensual adult same-sex relationships under Section 377 IPC violating Article 14 15 and 21",
+          "domain": "Constitutional Law",
+          "expectedIds": [
+            "SC-2018-005"
+          ],
+          "retrievedIds": [
+            "SC-2018-005",
+            "SC-1978-010",
+            "OIL-DHC-DLHC010794172016",
+            "OIL-DHC-DLHC011426812016",
+            "SC-2025-026"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.8698,
+            0.8667,
+            0.8657,
+            0.8427
+          ],
+          "matchedExpected": [
+            "SC-2018-005"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q15",
+          "query": "Workplace sexual harassment of women employee guidelines enforcement of fundamental rights under Article 14 19 and 21 in absence of enacted legislation",
+          "domain": "Labour & Service Law",
+          "expectedIds": [
+            "SC-1997-011"
+          ],
+          "retrievedIds": [
+            "SC-1997-011",
+            "SC-2018-005",
+            "OIL-SC-2003_INSC_88",
+            "OIL-SC-2015_INSC_559",
+            "OIL-SC-1998_INSC_267"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9198,
+            0.9064,
+            0.8852,
+            0.8719
+          ],
+          "matchedExpected": [
+            "SC-1997-011"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        }
+      ],
+      "init_ms": 3788.09
+    },
+    "semantic": {
+      "engine": "Semantic alone (BGE-small ONNX)",
+      "k": 5,
+      "corpusSize": 176,
+      "totalQueries": 15,
+      "hitRate": 0.9333,
+      "precisionAtK": 0.2533,
+      "recallAtK": 0.8667,
+      "mrr": 0.9,
+      "ndcgAtK": 0.8688,
+      "latency_avg_ms": 164.91,
+      "latency_p50_ms": 165.75,
+      "latency_p95_ms": 176.94,
+      "perQueryResults": [
+        {
+          "queryId": "BENCH-Q01",
+          "query": "Accused arrested in an alleged cheating matter without being furnished written grounds of arrest at the time of arrest and remanded to custody in violation of Article 22(1)",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2025-026",
+            "SC-2025-027",
+            "SC-2024-025",
+            "SC-2023-024"
+          ],
+          "retrievedIds": [
+            "SC-2024-025",
+            "SC-2025-026",
+            "SC-2023-024",
+            "SC-2025-027",
+            "OIL-AHC-UPHC020001822015"
+          ],
+          "retrievedScores": [
+            0.7897,
+            0.7714,
+            0.7537,
+            0.7165,
+            0.702
+          ],
+          "matchedExpected": [
+            "SC-2024-025",
+            "SC-2025-026",
+            "SC-2023-024",
+            "SC-2025-027"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.8,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.8045,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q02",
+          "query": "Application for regular bail in an offence punishable under 7 years where accused cooperated with investigation and satisfies triple test of not being flight risk",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2022-023",
+            "SC-1978-014"
+          ],
+          "retrievedIds": [
+            "OIL-DHC-DLHC012905682016",
+            "OIL-AHC-UPHC020319072022",
+            "OIL-AHC-UPHC020778092022",
+            "OIL-AHC-UPHC020386362022",
+            "OIL-AHC-UPHC020277182022"
+          ],
+          "retrievedScores": [
+            0.7064,
+            0.6912,
+            0.6884,
+            0.687,
+            0.6847
+          ],
+          "matchedExpected": [],
+          "missedExpected": [
+            "SC-2022-023",
+            "SC-1978-014"
+          ],
+          "precisionAtK": 0.0,
+          "recallAtK": 0.0,
+          "reciprocalRank": 0.0,
+          "ndcgAtK": 0.0,
+          "isHit": false
+        },
+        {
+          "queryId": "BENCH-Q03",
+          "query": "Police officer refuses to register First Information Report under Section 154 despite written complaint disclosing cognizable offence",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2013-004"
+          ],
+          "retrievedIds": [
+            "SC-2013-004",
+            "OIL-AHC-UPHC020075772022",
+            "OIL-AHC-UPHC020382482010",
+            "OIL-DHC-DLHC010517432014",
+            "OIL-AHC-UPHC020447492016"
+          ],
+          "retrievedScores": [
+            0.7334,
+            0.6771,
+            0.6685,
+            0.6652,
+            0.6539
+          ],
+          "matchedExpected": [
+            "SC-2013-004"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q04",
+          "query": "Violation of mandatory arrest procedure custodial violence failure to prepare arrest memo and inform family under Article 21 and 22",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-1996-012",
+            "SC-1978-010"
+          ],
+          "retrievedIds": [
+            "SC-1996-012",
+            "SC-2024-025",
+            "SC-2025-026",
+            "SC-2025-027",
+            "SC-2023-024"
+          ],
+          "retrievedScores": [
+            0.78,
+            0.7424,
+            0.7347,
+            0.7045,
+            0.7038
+          ],
+          "matchedExpected": [
+            "SC-1996-012"
+          ],
+          "missedExpected": [
+            "SC-1978-010"
+          ],
+          "precisionAtK": 0.2,
+          "recallAtK": 0.5,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.8262,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q05",
+          "query": "Mechanical arrest of husband and relatives under Section 498A IPC without prior notice of appearance under Section 41A CrPC",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2014-003",
+            "SC-2022-023"
+          ],
+          "retrievedIds": [
+            "SC-2014-003",
+            "SC-2025-026",
+            "OIL-AHC-UPHC020075772022",
+            "SC-1996-012",
+            "SC-2025-027"
+          ],
+          "retrievedScores": [
+            0.7774,
+            0.7409,
+            0.7201,
+            0.7165,
+            0.7121
+          ],
+          "matchedExpected": [
+            "SC-2014-003"
+          ],
+          "missedExpected": [
+            "SC-2022-023"
+          ],
+          "precisionAtK": 0.2,
+          "recallAtK": 0.5,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.8262,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q06",
+          "query": "Quashing of criminal proceedings under Section 482 CrPC where FIR arises purely from civil commercial breach of contract without dishonest intention at inception",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-1990-009"
+          ],
+          "retrievedIds": [
+            "SC-1990-009",
+            "OIL-AHC-UPHC020277182022",
+            "OIL-AHC-UPHC020699502022",
+            "OIL-AHC-UPHC020639252022",
+            "OIL-AHC-UPHC020075772022"
+          ],
+          "retrievedScores": [
+            0.7328,
+            0.7138,
+            0.6945,
+            0.6922,
+            0.6868
+          ],
+          "matchedExpected": [
+            "SC-1990-009"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q07",
+          "query": "Dishonour of cheque under Section 138 Negotiable Instruments Act drawer signed blank security cheque and claims statutory presumption under Section 139 is rebutted",
+          "domain": "Banking & Negotiable Instruments",
+          "expectedIds": [
+            "SC-2019-007",
+            "SC-2010-008"
+          ],
+          "retrievedIds": [
+            "SC-2019-007",
+            "SC-2010-008",
+            "OIL-DHC-DLHC010437372016",
+            "OIL-SC-1996_INSC_503",
+            "OIL-SC-2004_INSC_498"
+          ],
+          "retrievedScores": [
+            0.8584,
+            0.8043,
+            0.793,
+            0.7225,
+            0.721
+          ],
+          "matchedExpected": [
+            "SC-2019-007",
+            "SC-2010-008"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q08",
+          "query": "State surveillance bulk interception of telecommunication metadata and phone tapping infringing fundamental right to privacy under Article 21 and proportionality standard",
+          "domain": "Constitutional Law",
+          "expectedIds": [
+            "SC-2017-001",
+            "SC-1978-010"
+          ],
+          "retrievedIds": [
+            "SC-2017-001",
+            "OIL-SC-2015_INSC_559",
+            "SC-2025-026",
+            "SC-1978-010",
+            "SC-2024-025"
+          ],
+          "retrievedScores": [
+            0.7261,
+            0.6938,
+            0.6766,
+            0.6651,
+            0.6641
+          ],
+          "matchedExpected": [
+            "SC-2017-001",
+            "SC-1978-010"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.9448,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q09",
+          "query": "Criminal prosecution for social media post causing annoyance challenged for vagueness overbreadth and chilling effect on freedom of speech under Article 19(1)(a)",
+          "domain": "Cyber & Information Technology Law",
+          "expectedIds": [
+            "SC-2015-002"
+          ],
+          "retrievedIds": [
+            "BOM-2023-017",
+            "SC-2015-002",
+            "SC-1990-009",
+            "SC-2024-025",
+            "SC-2023-024"
+          ],
+          "retrievedScores": [
+            0.6771,
+            0.656,
+            0.6534,
+            0.6521,
+            0.649
+          ],
+          "matchedExpected": [
+            "SC-2015-002"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 0.5,
+          "ndcgAtK": 0.6309,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q10",
+          "query": "Reference of commercial dispute to arbitration under Section 8 and Section 11 of Arbitration and Conciliation Act where landlord tenant or arbitrability is contested",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "SC-2020-013"
+          ],
+          "retrievedIds": [
+            "SC-2020-013",
+            "OIL-DHC-DLHC015354202015",
+            "SC-2014-020",
+            "OIL-SC-2000_INSC_110",
+            "OIL-SC-2003_INSC_14"
+          ],
+          "retrievedScores": [
+            0.8077,
+            0.7506,
+            0.7466,
+            0.7139,
+            0.7015
+          ],
+          "matchedExpected": [
+            "SC-2020-013"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q11",
+          "query": "Challenge to domestic arbitral award under Section 34 of Arbitration Act on grounds of patent illegality and perversity violating public policy of India",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "SC-2014-020"
+          ],
+          "retrievedIds": [
+            "SC-2014-020",
+            "SC-2020-013",
+            "OIL-DHC-DLHC015354202015",
+            "OIL-SC-2022_INSC_130",
+            "OIL-DHC-DLHC010614922013"
+          ],
+          "retrievedScores": [
+            0.8059,
+            0.7296,
+            0.7117,
+            0.706,
+            0.6975
+          ],
+          "matchedExpected": [
+            "SC-2014-020"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q12",
+          "query": "Interim injunction against deceptive similarity well known trademark infringement and dilution in commercial passing off action",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "DEL-2022-016"
+          ],
+          "retrievedIds": [
+            "DEL-2022-016",
+            "OIL-DHC-DLHC010207822016",
+            "OIL-AHC-UPHC020447492016",
+            "OIL-SC-1997_INSC_125",
+            "SC-2014-020"
+          ],
+          "retrievedScores": [
+            0.6739,
+            0.6698,
+            0.6587,
+            0.658,
+            0.6552
+          ],
+          "matchedExpected": [
+            "DEL-2022-016"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q13",
+          "query": "Constitutional validity of instant triple talaq talaq-e-biddat challenged as manifestly arbitrary and violative of fundamental right to equality under Article 14",
+          "domain": "Family Law",
+          "expectedIds": [
+            "SC-2017-006"
+          ],
+          "retrievedIds": [
+            "SC-2017-006",
+            "SC-1978-010",
+            "OIL-SC-2015_INSC_559",
+            "OIL-SC-2025_INSC_155",
+            "OIL-AHC-UPHC020500302019"
+          ],
+          "retrievedScores": [
+            0.8455,
+            0.7134,
+            0.6971,
+            0.6825,
+            0.6805
+          ],
+          "matchedExpected": [
+            "SC-2017-006"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q14",
+          "query": "Constitutional challenge to criminalization of consensual adult same-sex relationships under Section 377 IPC violating Article 14 15 and 21",
+          "domain": "Constitutional Law",
+          "expectedIds": [
+            "SC-2018-005"
+          ],
+          "retrievedIds": [
+            "SC-2018-005",
+            "SC-2019-021",
+            "SC-1978-010",
+            "OIL-DHC-DLHC011058852016",
+            "OIL-DHC-DLHC011637222016"
+          ],
+          "retrievedScores": [
+            0.8365,
+            0.7291,
+            0.727,
+            0.7151,
+            0.7114
+          ],
+          "matchedExpected": [
+            "SC-2018-005"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q15",
+          "query": "Workplace sexual harassment of women employee guidelines enforcement of fundamental rights under Article 14 19 and 21 in absence of enacted legislation",
+          "domain": "Labour & Service Law",
+          "expectedIds": [
+            "SC-1997-011"
+          ],
+          "retrievedIds": [
+            "SC-1997-011",
+            "SC-2018-005",
+            "SC-1978-010",
+            "OIL-SC-2003_INSC_88",
+            "SC-2023-024"
+          ],
+          "retrievedScores": [
+            0.8491,
+            0.6878,
+            0.6826,
+            0.6801,
+            0.6767
+          ],
+          "matchedExpected": [
+            "SC-1997-011"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        }
+      ],
+      "init_ms": 352.56
+    },
+    "3way_rrf": {
+      "engine": "3-way RRF (TF-IDF + BM25 + Semantic)",
+      "k": 5,
+      "corpusSize": 176,
+      "totalQueries": 15,
+      "hitRate": 0.8667,
+      "precisionAtK": 0.2533,
+      "recallAtK": 0.8333,
+      "mrr": 0.8,
+      "ndcgAtK": 0.7939,
+      "latency_avg_ms": 687.84,
+      "latency_p50_ms": 669.62,
+      "latency_p95_ms": 902.06,
+      "perQueryResults": [
+        {
+          "queryId": "BENCH-Q01",
+          "query": "Accused arrested in an alleged cheating matter without being furnished written grounds of arrest at the time of arrest and remanded to custody in violation of Article 22(1)",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2025-026",
+            "SC-2025-027",
+            "SC-2024-025",
+            "SC-2023-024"
+          ],
+          "retrievedIds": [
+            "SC-2025-026",
+            "SC-2023-024",
+            "SC-2024-025",
+            "SC-2025-027",
+            "OIL-AHC-UPHC020699502022"
+          ],
+          "retrievedScores": [
+            0.9395,
+            0.9293,
+            0.9136,
+            0.9102,
+            0.8472
+          ],
+          "matchedExpected": [
+            "SC-2025-026",
+            "SC-2023-024",
+            "SC-2024-025",
+            "SC-2025-027"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.8,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.9312,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q02",
+          "query": "Application for regular bail in an offence punishable under 7 years where accused cooperated with investigation and satisfies triple test of not being flight risk",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2022-023",
+            "SC-1978-014"
+          ],
+          "retrievedIds": [
+            "OIL-AHC-UPHC020386362022",
+            "OIL-AHC-UPHC020699502022",
+            "OIL-AHC-UPHC020422532022",
+            "OIL-DHC-DLHC011488012016",
+            "OIL-SC-2016_INSC_1151"
+          ],
+          "retrievedScores": [
+            0.8608,
+            0.8525,
+            0.8517,
+            0.8434,
+            0.8075
+          ],
+          "matchedExpected": [],
+          "missedExpected": [
+            "SC-2022-023",
+            "SC-1978-014"
+          ],
+          "precisionAtK": 0.0,
+          "recallAtK": 0.0,
+          "reciprocalRank": 0.0,
+          "ndcgAtK": 0.0,
+          "isHit": false
+        },
+        {
+          "queryId": "BENCH-Q03",
+          "query": "Police officer refuses to register First Information Report under Section 154 despite written complaint disclosing cognizable offence",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2013-004"
+          ],
+          "retrievedIds": [
+            "SC-2013-004",
+            "OIL-AHC-UPHC020075772022",
+            "OIL-AHC-UPHC020699502022",
+            "OIL-AHC-UPHC020447492016",
+            "OIL-DHC-DLHC010794172016"
+          ],
+          "retrievedScores": [
+            0.9452,
+            0.9395,
+            0.7972,
+            0.7946,
+            0.7824
+          ],
+          "matchedExpected": [
+            "SC-2013-004"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q04",
+          "query": "Violation of mandatory arrest procedure custodial violence failure to prepare arrest memo and inform family under Article 21 and 22",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-1996-012",
+            "SC-1978-010"
+          ],
+          "retrievedIds": [
+            "SC-1996-012",
+            "SC-2025-026",
+            "SC-2024-025",
+            "SC-2025-027",
+            "SC-2023-024"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.92,
+            0.9123,
+            0.8884,
+            0.8709
+          ],
+          "matchedExpected": [
+            "SC-1996-012"
+          ],
+          "missedExpected": [
+            "SC-1978-010"
+          ],
+          "precisionAtK": 0.2,
+          "recallAtK": 0.5,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.8262,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q05",
+          "query": "Mechanical arrest of husband and relatives under Section 498A IPC without prior notice of appearance under Section 41A CrPC",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-2014-003",
+            "SC-2022-023"
+          ],
+          "retrievedIds": [
+            "SC-2014-003",
+            "SC-2025-026",
+            "OIL-AHC-UPHC020075772022",
+            "SC-2022-023",
+            "SC-2025-027"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9212,
+            0.8948,
+            0.8948,
+            0.876
+          ],
+          "matchedExpected": [
+            "SC-2014-003",
+            "SC-2022-023"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.9448,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q06",
+          "query": "Quashing of criminal proceedings under Section 482 CrPC where FIR arises purely from civil commercial breach of contract without dishonest intention at inception",
+          "domain": "Criminal Law",
+          "expectedIds": [
+            "SC-1990-009"
+          ],
+          "retrievedIds": [
+            "OIL-AHC-UPHC020639252022",
+            "SC-1990-009",
+            "OIL-DHC-DLHC015857912015",
+            "OIL-AHC-UPHC020699502022",
+            "OIL-DHC-DLHC011058852016"
+          ],
+          "retrievedScores": [
+            0.9191,
+            0.9118,
+            0.8817,
+            0.8707,
+            0.8597
+          ],
+          "matchedExpected": [
+            "SC-1990-009"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 0.5,
+          "ndcgAtK": 0.6309,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q07",
+          "query": "Dishonour of cheque under Section 138 Negotiable Instruments Act drawer signed blank security cheque and claims statutory presumption under Section 139 is rebutted",
+          "domain": "Banking & Negotiable Instruments",
+          "expectedIds": [
+            "SC-2019-007",
+            "SC-2010-008"
+          ],
+          "retrievedIds": [
+            "SC-2019-007",
+            "SC-2010-008",
+            "OIL-DHC-DLHC010437372016",
+            "OIL-SC-2004_INSC_498",
+            "OIL-SC-2025_INSC_155"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9347,
+            0.9198,
+            0.8345,
+            0.8298
+          ],
+          "matchedExpected": [
+            "SC-2019-007",
+            "SC-2010-008"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q08",
+          "query": "State surveillance bulk interception of telecommunication metadata and phone tapping infringing fundamental right to privacy under Article 21 and proportionality standard",
+          "domain": "Constitutional Law",
+          "expectedIds": [
+            "SC-2017-001",
+            "SC-1978-010"
+          ],
+          "retrievedIds": [
+            "SC-2017-001",
+            "OIL-SC-2015_INSC_559",
+            "SC-2023-019",
+            "SC-1978-010",
+            "SC-1997-011"
+          ],
+          "retrievedScores": [
+            0.9452,
+            0.9348,
+            0.89,
+            0.8577,
+            0.8427
+          ],
+          "matchedExpected": [
+            "SC-2017-001",
+            "SC-1978-010"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.4,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 0.9448,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q09",
+          "query": "Criminal prosecution for social media post causing annoyance challenged for vagueness overbreadth and chilling effect on freedom of speech under Article 19(1)(a)",
+          "domain": "Cyber & Information Technology Law",
+          "expectedIds": [
+            "SC-2015-002"
+          ],
+          "retrievedIds": [
+            "BOM-2023-017",
+            "SC-2015-002",
+            "OIL-SC-1989_INSC_3",
+            "SC-2023-024",
+            "OIL-SC-2015_INSC_559"
+          ],
+          "retrievedScores": [
+            0.9452,
+            0.9255,
+            0.7665,
+            0.6006,
+            0.5843
+          ],
+          "matchedExpected": [
+            "SC-2015-002"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 0.5,
+          "ndcgAtK": 0.6309,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q10",
+          "query": "Reference of commercial dispute to arbitration under Section 8 and Section 11 of Arbitration and Conciliation Act where landlord tenant or arbitrability is contested",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "SC-2020-013"
+          ],
+          "retrievedIds": [
+            "SC-2020-013",
+            "OIL-DHC-DLHC015354202015",
+            "SC-2014-020",
+            "OIL-SC-2000_INSC_110",
+            "OIL-SC-2003_INSC_14"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.93,
+            0.9245,
+            0.8884,
+            0.879
+          ],
+          "matchedExpected": [
+            "SC-2020-013"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q11",
+          "query": "Challenge to domestic arbitral award under Section 34 of Arbitration Act on grounds of patent illegality and perversity violating public policy of India",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "SC-2014-020"
+          ],
+          "retrievedIds": [
+            "SC-2014-020",
+            "OIL-SC-2022_INSC_130",
+            "SC-2020-013",
+            "OIL-SC-2018_INSC_178",
+            "OIL-SC-2003_INSC_88"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9191,
+            0.8907,
+            0.8673,
+            0.8633
+          ],
+          "matchedExpected": [
+            "SC-2014-020"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q12",
+          "query": "Interim injunction against deceptive similarity well known trademark infringement and dilution in commercial passing off action",
+          "domain": "Corporate & Commercial Law",
+          "expectedIds": [
+            "DEL-2022-016"
+          ],
+          "retrievedIds": [
+            "DEL-2022-016",
+            "BOM-2023-017",
+            "OIL-SC-2006_INSC_78",
+            "SC-2014-020",
+            "OIL-AHC-UPHC020447492016"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.8644,
+            0.8359,
+            0.8202,
+            0.8065
+          ],
+          "matchedExpected": [
+            "DEL-2022-016"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q13",
+          "query": "Constitutional validity of instant triple talaq talaq-e-biddat challenged as manifestly arbitrary and violative of fundamental right to equality under Article 14",
+          "domain": "Family Law",
+          "expectedIds": [
+            "SC-2017-006"
+          ],
+          "retrievedIds": [
+            "SC-1978-010",
+            "OIL-SC-2015_INSC_559",
+            "OIL-SC-2003_INSC_88",
+            "OIL-AHC-UPHC020545222018",
+            "OIL-AHC-UPHC020011922019"
+          ],
+          "retrievedScores": [
+            0.9177,
+            0.9027,
+            0.8817,
+            0.8028,
+            0.7928
+          ],
+          "matchedExpected": [],
+          "missedExpected": [
+            "SC-2017-006"
+          ],
+          "precisionAtK": 0.0,
+          "recallAtK": 0.0,
+          "reciprocalRank": 0.0,
+          "ndcgAtK": 0.0,
+          "isHit": false
+        },
+        {
+          "queryId": "BENCH-Q14",
+          "query": "Constitutional challenge to criminalization of consensual adult same-sex relationships under Section 377 IPC violating Article 14 15 and 21",
+          "domain": "Constitutional Law",
+          "expectedIds": [
+            "SC-2018-005"
+          ],
+          "retrievedIds": [
+            "SC-2018-005",
+            "SC-1978-010",
+            "OIL-DHC-DLHC011058852016",
+            "SC-2025-026",
+            "SC-1997-011"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.8885,
+            0.858,
+            0.8371,
+            0.8323
+          ],
+          "matchedExpected": [
+            "SC-2018-005"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        },
+        {
+          "queryId": "BENCH-Q15",
+          "query": "Workplace sexual harassment of women employee guidelines enforcement of fundamental rights under Article 14 19 and 21 in absence of enacted legislation",
+          "domain": "Labour & Service Law",
+          "expectedIds": [
+            "SC-1997-011"
+          ],
+          "retrievedIds": [
+            "SC-1997-011",
+            "SC-2018-005",
+            "OIL-SC-2003_INSC_88",
+            "SC-1978-010",
+            "OIL-SC-2015_INSC_559"
+          ],
+          "retrievedScores": [
+            0.95,
+            0.9254,
+            0.906,
+            0.8722,
+            0.8509
+          ],
+          "matchedExpected": [
+            "SC-1997-011"
+          ],
+          "missedExpected": [],
+          "precisionAtK": 0.2,
+          "recallAtK": 1.0,
+          "reciprocalRank": 1.0,
+          "ndcgAtK": 1.0,
+          "isHit": true
+        }
+      ],
+      "init_ms": 4170.25
+    }
+  },
+  "unjudgedDiagnostics": [
+    {
+      "queryId": "BENCH-Q01",
+      "querySnippet": "Accused arrested in an alleged cheating matter without being",
+      "rank": 5,
+      "caseId": "OIL-AHC-UPHC020699502022",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q02",
+      "querySnippet": "Application for regular bail in an offence punishable under ",
+      "rank": 1,
+      "caseId": "OIL-AHC-UPHC020386362022",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q02",
+      "querySnippet": "Application for regular bail in an offence punishable under ",
+      "rank": 2,
+      "caseId": "OIL-AHC-UPHC020699502022",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q02",
+      "querySnippet": "Application for regular bail in an offence punishable under ",
+      "rank": 3,
+      "caseId": "OIL-AHC-UPHC020422532022",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q02",
+      "querySnippet": "Application for regular bail in an offence punishable under ",
+      "rank": 4,
+      "caseId": "OIL-DHC-DLHC011488012016",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q02",
+      "querySnippet": "Application for regular bail in an offence punishable under ",
+      "rank": 5,
+      "caseId": "OIL-SC-2016_INSC_1151",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q03",
+      "querySnippet": "Police officer refuses to register First Information Report ",
+      "rank": 2,
+      "caseId": "OIL-AHC-UPHC020075772022",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q03",
+      "querySnippet": "Police officer refuses to register First Information Report ",
+      "rank": 3,
+      "caseId": "OIL-AHC-UPHC020699502022",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q03",
+      "querySnippet": "Police officer refuses to register First Information Report ",
+      "rank": 4,
+      "caseId": "OIL-AHC-UPHC020447492016",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q03",
+      "querySnippet": "Police officer refuses to register First Information Report ",
+      "rank": 5,
+      "caseId": "OIL-DHC-DLHC010794172016",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q05",
+      "querySnippet": "Mechanical arrest of husband and relatives under Section 498",
+      "rank": 3,
+      "caseId": "OIL-AHC-UPHC020075772022",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q06",
+      "querySnippet": "Quashing of criminal proceedings under Section 482 CrPC wher",
+      "rank": 1,
+      "caseId": "OIL-AHC-UPHC020639252022",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q06",
+      "querySnippet": "Quashing of criminal proceedings under Section 482 CrPC wher",
+      "rank": 3,
+      "caseId": "OIL-DHC-DLHC015857912015",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q06",
+      "querySnippet": "Quashing of criminal proceedings under Section 482 CrPC wher",
+      "rank": 4,
+      "caseId": "OIL-AHC-UPHC020699502022",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q06",
+      "querySnippet": "Quashing of criminal proceedings under Section 482 CrPC wher",
+      "rank": 5,
+      "caseId": "OIL-DHC-DLHC011058852016",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q07",
+      "querySnippet": "Dishonour of cheque under Section 138 Negotiable Instruments",
+      "rank": 3,
+      "caseId": "OIL-DHC-DLHC010437372016",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q07",
+      "querySnippet": "Dishonour of cheque under Section 138 Negotiable Instruments",
+      "rank": 4,
+      "caseId": "OIL-SC-2004_INSC_498",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q07",
+      "querySnippet": "Dishonour of cheque under Section 138 Negotiable Instruments",
+      "rank": 5,
+      "caseId": "OIL-SC-2025_INSC_155",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q08",
+      "querySnippet": "State surveillance bulk interception of telecommunication me",
+      "rank": 2,
+      "caseId": "OIL-SC-2015_INSC_559",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q09",
+      "querySnippet": "Criminal prosecution for social media post causing annoyance",
+      "rank": 3,
+      "caseId": "OIL-SC-1989_INSC_3",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q09",
+      "querySnippet": "Criminal prosecution for social media post causing annoyance",
+      "rank": 5,
+      "caseId": "OIL-SC-2015_INSC_559",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q10",
+      "querySnippet": "Reference of commercial dispute to arbitration under Section",
+      "rank": 2,
+      "caseId": "OIL-DHC-DLHC015354202015",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q10",
+      "querySnippet": "Reference of commercial dispute to arbitration under Section",
+      "rank": 4,
+      "caseId": "OIL-SC-2000_INSC_110",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q10",
+      "querySnippet": "Reference of commercial dispute to arbitration under Section",
+      "rank": 5,
+      "caseId": "OIL-SC-2003_INSC_14",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q11",
+      "querySnippet": "Challenge to domestic arbitral award under Section 34 of Arb",
+      "rank": 2,
+      "caseId": "OIL-SC-2022_INSC_130",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q11",
+      "querySnippet": "Challenge to domestic arbitral award under Section 34 of Arb",
+      "rank": 4,
+      "caseId": "OIL-SC-2018_INSC_178",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q11",
+      "querySnippet": "Challenge to domestic arbitral award under Section 34 of Arb",
+      "rank": 5,
+      "caseId": "OIL-SC-2003_INSC_88",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q12",
+      "querySnippet": "Interim injunction against deceptive similarity well known t",
+      "rank": 3,
+      "caseId": "OIL-SC-2006_INSC_78",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q12",
+      "querySnippet": "Interim injunction against deceptive similarity well known t",
+      "rank": 5,
+      "caseId": "OIL-AHC-UPHC020447492016",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q13",
+      "querySnippet": "Constitutional validity of instant triple talaq talaq-e-bidd",
+      "rank": 2,
+      "caseId": "OIL-SC-2015_INSC_559",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q13",
+      "querySnippet": "Constitutional validity of instant triple talaq talaq-e-bidd",
+      "rank": 3,
+      "caseId": "OIL-SC-2003_INSC_88",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q13",
+      "querySnippet": "Constitutional validity of instant triple talaq talaq-e-bidd",
+      "rank": 4,
+      "caseId": "OIL-AHC-UPHC020545222018",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q13",
+      "querySnippet": "Constitutional validity of instant triple talaq talaq-e-bidd",
+      "rank": 5,
+      "caseId": "OIL-AHC-UPHC020011922019",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q14",
+      "querySnippet": "Constitutional challenge to criminalization of consensual ad",
+      "rank": 3,
+      "caseId": "OIL-DHC-DLHC011058852016",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q15",
+      "querySnippet": "Workplace sexual harassment of women employee guidelines enf",
+      "rank": 3,
+      "caseId": "OIL-SC-2003_INSC_88",
+      "status": "unjudged_open_india_law_candidate"
+    },
+    {
+      "queryId": "BENCH-Q15",
+      "querySnippet": "Workplace sexual harassment of women employee guidelines enf",
+      "rank": 5,
+      "caseId": "OIL-SC-2015_INSC_559",
+      "status": "unjudged_open_india_law_candidate"
+    }
+  ],
+  "evaluationCaveat": "Benchmark relevance lists in retrieval_benchmark.json were constructed when the corpus contained 27 cases. Additional retrieved OIL cases are unjudged candidates rather than confirmed negatives."
+}

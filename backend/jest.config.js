@@ -1,0 +1,16 @@
+module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  testMatch: ['**/tests/**/*.test.ts'],
+  moduleFileExtensions: ['ts', 'js', 'json', 'node'],
+  verbose: true,
+  transform: {
+    '^.+\\.tsx?$': ['ts-jest', {
+      tsconfig: {
+        target: 'ES2022',
+        module: 'commonjs',
+        esModuleInterop: true
+      }
+    }]
+  }
+};

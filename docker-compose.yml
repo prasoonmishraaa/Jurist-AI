@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "5001:5001"
+    environment:
+      - NODE_ENV=production
+      - PORT=5001
+      - MONGODB_URI=mongodb://mongodb:27017/jurist_ai
+      - JWT_SECRET=${JWT_SECRET:-jurist_production_secure_jwt_secret_change_me}
+      - JWT_EXPIRES_IN=7d
+      - ML_SERVICE_URL=http://ml-service:8000
+      - INTERNAL_ML_SECRET=${INTERNAL_ML_SECRET:-jurist_internal_shared_secret_key}
+      - CORS_ORIGIN=http://localhost,http://localhost:80,http://localhost:5173
+      - MAX_FILE_SIZE_MB=15
+    depends_on:
+      - mongodb
+      - ml-service
+    restart: unless-stopped
+
+  ml-service:
+    build:
+      context: ./ml-service
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+      - ML_PORT=8000
+      - INTERNAL_ML_SECRET=${INTERNAL_ML_SECRET:-jurist_internal_shared_secret_key}
+      - DEBUG=false
+    restart: unless-stopped
+
+  mongodb:
+    image: mongo:7-jammy
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    restart: unless-stopped
+
+volumes:
+  mongo-data:
