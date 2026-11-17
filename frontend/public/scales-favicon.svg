@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#0B192C"/>
+  <path d="M32 10 L32 50" stroke="#C5A880" stroke-width="3" stroke-linecap="round"/>
+  <path d="M16 18 L48 18" stroke="#C5A880" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Central Finial -->
+  <circle cx="32" cy="11" r="3" fill="#C5A880"/>
+  <!-- Left Pan -->
+  <line x1="16" y1="18" x2="10" y2="30" stroke="#C5A880" stroke-width="1.5"/>
+  <line x1="16" y1="18" x2="22" y2="30" stroke="#C5A880" stroke-width="1.5"/>
+  <path d="M9 30 Q16 36 23 30 Z" fill="#C5A880" opacity="0.9"/>
+  <!-- Right Pan -->
+  <line x1="48" y1="18" x2="42" y2="30" stroke="#C5A880" stroke-width="1.5"/>
+  <line x1="48" y1="18" x2="54" y2="30" stroke="#C5A880" stroke-width="1.5"/>
+  <path d="M41 30 Q48 36 55 30 Z" fill="#C5A880" opacity="0.9"/>
+  <!-- Pedestal -->
+  <path d="M22 54 L42 54" stroke="#C5A880" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M26 50 L38 50" stroke="#C5A880" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
