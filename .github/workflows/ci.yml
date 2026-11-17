@@ -10,65 +10,64 @@ jobs:
   test-ml-service:
     name: NLP & Precedent Engine Tests
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ml-service
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
       - name: Install ML Dependencies
-        run: |
-          cd ml-service
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
+
       - name: Run Python ML/NLP Tests
-        run: |
-          cd ml-service
-          python -m unittest discover -s tests -v
+        run: python -m unittest discover -s tests -v
+
       - name: Run Model Evaluation
-        run: |
-          cd ml-service
-          python app/evaluation/evaluate_models.py
+        run: python app/evaluation/evaluate_models.py
 
   test-and-build-backend:
     name: Backend API Tests & Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-          cache-dependency-path: backend/package.json
+
       - name: Install Backend Dependencies
-        run: |
-          cd backend
-          npm install
+        run: npm install
+        working-directory: backend
+
       - name: Run Backend Unit & Integration Tests
-        run: |
-          cd backend
-          npm test
+        run: npm test
+        working-directory: backend
+
       - name: Compile Backend TypeScript
-        run: |
-          cd backend
-          npm run build
+        run: npm run build
+        working-directory: backend
 
   build-frontend:
     name: Frontend React/Vite Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
-          cache-dependency-path: frontend/package.json
+
       - name: Install Frontend Dependencies
-        run: |
-          cd frontend
-          npm install
+        run: npm install
+        working-directory: frontend
+
       - name: Build Frontend Application
-        run: |
-          cd frontend
-          npm run build
+        run: npm run build
+        working-directory: frontend
