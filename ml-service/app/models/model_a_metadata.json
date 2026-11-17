@@ -1,0 +1,397 @@
+{
+  "model_name": "Model A \u2014 Judicial Disposition",
+  "model_version": "v4.26-experimental",
+  "sample_size": 43,
+  "target_classes": [
+    "appeal_allowed",
+    "appeal_dismissed",
+    "petition_allowed",
+    "petition_dismissed"
+  ],
+  "class_distribution": {
+    "appeal_allowed": 11,
+    "appeal_dismissed": 17,
+    "petition_allowed": 8,
+    "petition_dismissed": 7
+  },
+  "majority_baseline": {
+    "majority_class": "appeal_dismissed",
+    "accuracy": 0.3953
+  },
+  "oof_metrics": {
+    "accuracy": 0.3488,
+    "balanced_accuracy": 0.2662,
+    "macro_f1": 0.2559,
+    "weighted_f1": 0.3257,
+    "macro_precision": 0.2512,
+    "macro_recall": 0.2662
+  },
+  "per_class_metrics": {
+    "appeal_allowed": {
+      "precision": 0.1,
+      "recall": 0.09090909090909091,
+      "f1-score": 0.09523809523809523,
+      "support": 11.0
+    },
+    "appeal_dismissed": {
+      "precision": 0.5714285714285714,
+      "recall": 0.7058823529411765,
+      "f1-score": 0.631578947368421,
+      "support": 17.0
+    },
+    "petition_allowed": {
+      "precision": 0.16666666666666666,
+      "recall": 0.125,
+      "f1-score": 0.14285714285714285,
+      "support": 8.0
+    },
+    "petition_dismissed": {
+      "precision": 0.16666666666666666,
+      "recall": 0.14285714285714285,
+      "f1-score": 0.15384615384615385,
+      "support": 7.0
+    },
+    "accuracy": 0.3488372093023256,
+    "macro avg": {
+      "precision": 0.2511904761904762,
+      "recall": 0.26616214667685256,
+      "f1-score": 0.2558800848274533,
+      "support": 43.0
+    },
+    "weighted avg": {
+      "precision": 0.30963455149501656,
+      "recall": 0.3488372093023256,
+      "f1-score": 0.32568003192238193,
+      "support": 43.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      1,
+      9,
+      0,
+      1
+    ],
+    [
+      4,
+      12,
+      1,
+      0
+    ],
+    [
+      3,
+      0,
+      1,
+      4
+    ],
+    [
+      2,
+      0,
+      4,
+      1
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "appeal_allowed",
+    "appeal_dismissed",
+    "petition_allowed",
+    "petition_dismissed"
+  ],
+  "fold_breakdown": [
+    {
+      "fold": 1,
+      "train_size": 34,
+      "val_size": 9,
+      "accuracy": 0.2222,
+      "macro_f1": 0.1833
+    },
+    {
+      "fold": 2,
+      "train_size": 34,
+      "val_size": 9,
+      "accuracy": 0.4444,
+      "macro_f1": 0.2
+    },
+    {
+      "fold": 3,
+      "train_size": 34,
+      "val_size": 9,
+      "accuracy": 0.3333,
+      "macro_f1": 0.1875
+    },
+    {
+      "fold": 4,
+      "train_size": 35,
+      "val_size": 8,
+      "accuracy": 0.5,
+      "macro_f1": 0.3125
+    },
+    {
+      "fold": 5,
+      "train_size": 35,
+      "val_size": 8,
+      "accuracy": 0.25,
+      "macro_f1": 0.1833
+    }
+  ],
+  "oof_case_predictions": [
+    {
+      "case_id": "OIL-SC-2021_INSC_327",
+      "actual": "appeal_allowed",
+      "predicted": "appeal_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1996_INSC_503",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-2006_INSC_78",
+      "actual": "appeal_allowed",
+      "predicted": "appeal_allowed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-2007_INSC_1082",
+      "actual": "appeal_allowed",
+      "predicted": "appeal_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1955_INSC_31",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-2003_INSC_88",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-1973_INSC_203",
+      "actual": "petition_allowed",
+      "predicted": "petition_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-2000_INSC_110",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-2016_INSC_467",
+      "actual": "appeal_allowed",
+      "predicted": "petition_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1973_INSC_247",
+      "actual": "petition_dismissed",
+      "predicted": "petition_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1979_INSC_85",
+      "actual": "appeal_allowed",
+      "predicted": "appeal_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1998_INSC_267",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-1992_INSC_350",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-1961_INSC_324",
+      "actual": "appeal_allowed",
+      "predicted": "appeal_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-2006_INSC_699",
+      "actual": "appeal_allowed",
+      "predicted": "appeal_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1984_INSC_90",
+      "actual": "petition_allowed",
+      "predicted": "appeal_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1952_INSC_75",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-1964_INSC_260",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-2010_INSC_109",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1994_INSC_388",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-1968_INSC_212",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1972_INSC_24",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-2007_INSC_548",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-2012_INSC_207",
+      "actual": "petition_dismissed",
+      "predicted": "appeal_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC010207822016",
+      "actual": "petition_dismissed",
+      "predicted": "petition_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC015857912015",
+      "actual": "petition_allowed",
+      "predicted": "appeal_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC010110302013",
+      "actual": "appeal_allowed",
+      "predicted": "appeal_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC011166952013",
+      "actual": "petition_dismissed",
+      "predicted": "petition_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC011406392016",
+      "actual": "petition_allowed",
+      "predicted": "petition_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC010614922013",
+      "actual": "appeal_allowed",
+      "predicted": "appeal_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC010029692013",
+      "actual": "petition_dismissed",
+      "predicted": "petition_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-DHC-DLHC011058852016",
+      "actual": "petition_allowed",
+      "predicted": "appeal_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC012541422014",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_dismissed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-DHC-DLHC012440582016",
+      "actual": "appeal_dismissed",
+      "predicted": "petition_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC010440622015",
+      "actual": "petition_dismissed",
+      "predicted": "appeal_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC011594232016",
+      "actual": "petition_allowed",
+      "predicted": "petition_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020034182022",
+      "actual": "appeal_allowed",
+      "predicted": "appeal_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020481512022",
+      "actual": "petition_allowed",
+      "predicted": "petition_allowed",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020380352022",
+      "actual": "petition_allowed",
+      "predicted": "petition_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020000012005",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020261932002",
+      "actual": "appeal_allowed",
+      "predicted": "appeal_dismissed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020265642022",
+      "actual": "petition_dismissed",
+      "predicted": "petition_allowed",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020001822015",
+      "actual": "appeal_dismissed",
+      "predicted": "appeal_allowed",
+      "correct": false
+    }
+  ]
+}

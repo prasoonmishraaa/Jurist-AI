@@ -1,0 +1,361 @@
+{
+  "model_name": "Model B \u2014 Successful Party",
+  "model_version": "v4.26-experimental",
+  "sample_size": 37,
+  "target_classes": [
+    "accused",
+    "petitioner",
+    "respondent",
+    "state_prosecution"
+  ],
+  "class_distribution": {
+    "state_prosecution": 5,
+    "petitioner": 8,
+    "respondent": 17,
+    "accused": 7
+  },
+  "majority_baseline": {
+    "majority_class": "respondent",
+    "accuracy": 0.4595
+  },
+  "oof_metrics": {
+    "accuracy": 0.5405,
+    "balanced_accuracy": 0.3947,
+    "macro_f1": 0.3664,
+    "weighted_f1": 0.4945,
+    "macro_precision": 0.3452,
+    "macro_recall": 0.3947
+  },
+  "per_class_metrics": {
+    "accused": {
+      "precision": 0.5,
+      "recall": 0.5714285714285714,
+      "f1-score": 0.5333333333333333,
+      "support": 7.0
+    },
+    "petitioner": {
+      "precision": 0.16666666666666666,
+      "recall": 0.125,
+      "f1-score": 0.14285714285714285,
+      "support": 8.0
+    },
+    "respondent": {
+      "precision": 0.7142857142857143,
+      "recall": 0.8823529411764706,
+      "f1-score": 0.7894736842105263,
+      "support": 17.0
+    },
+    "state_prosecution": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 5.0
+    },
+    "accuracy": 0.5405405405405406,
+    "macro avg": {
+      "precision": 0.34523809523809523,
+      "recall": 0.3946953781512605,
+      "f1-score": 0.36641604010025064,
+      "support": 37.0
+    },
+    "weighted avg": {
+      "precision": 0.45881595881595877,
+      "recall": 0.5405405405405406,
+      "f1-score": 0.49452008399376823,
+      "support": 37.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      4,
+      1,
+      0,
+      2
+    ],
+    [
+      2,
+      1,
+      5,
+      0
+    ],
+    [
+      0,
+      2,
+      15,
+      0
+    ],
+    [
+      2,
+      2,
+      1,
+      0
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "accused",
+    "petitioner",
+    "respondent",
+    "state_prosecution"
+  ],
+  "fold_breakdown": [
+    {
+      "fold": 1,
+      "train_size": 29,
+      "val_size": 8,
+      "accuracy": 0.75,
+      "macro_f1": 0.4167
+    },
+    {
+      "fold": 2,
+      "train_size": 29,
+      "val_size": 8,
+      "accuracy": 0.375,
+      "macro_f1": 0.1667
+    },
+    {
+      "fold": 3,
+      "train_size": 30,
+      "val_size": 7,
+      "accuracy": 0.4286,
+      "macro_f1": 0.1667
+    },
+    {
+      "fold": 4,
+      "train_size": 30,
+      "val_size": 7,
+      "accuracy": 0.7143,
+      "macro_f1": 0.5417
+    },
+    {
+      "fold": 5,
+      "train_size": 30,
+      "val_size": 7,
+      "accuracy": 0.4286,
+      "macro_f1": 0.2917
+    }
+  ],
+  "oof_case_predictions": [
+    {
+      "case_id": "OIL-SC-2021_INSC_327",
+      "actual": "state_prosecution",
+      "predicted": "respondent",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1996_INSC_503",
+      "actual": "state_prosecution",
+      "predicted": "accused",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-2007_INSC_1082",
+      "actual": "petitioner",
+      "predicted": "respondent",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1955_INSC_31",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-2003_INSC_88",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-1973_INSC_203",
+      "actual": "petitioner",
+      "predicted": "respondent",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-2000_INSC_110",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-1973_INSC_247",
+      "actual": "respondent",
+      "predicted": "petitioner",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1979_INSC_85",
+      "actual": "petitioner",
+      "predicted": "respondent",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1998_INSC_267",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-1992_INSC_350",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-2006_INSC_699",
+      "actual": "accused",
+      "predicted": "accused",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-1984_INSC_90",
+      "actual": "petitioner",
+      "predicted": "respondent",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1952_INSC_75",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-1964_INSC_260",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-2010_INSC_109",
+      "actual": "state_prosecution",
+      "predicted": "accused",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1994_INSC_388",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-1968_INSC_212",
+      "actual": "respondent",
+      "predicted": "petitioner",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-SC-1972_INSC_24",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-SC-2012_INSC_207",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-DHC-DLHC010207822016",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-DHC-DLHC015857912015",
+      "actual": "petitioner",
+      "predicted": "accused",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC011166952013",
+      "actual": "state_prosecution",
+      "predicted": "petitioner",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC011406392016",
+      "actual": "petitioner",
+      "predicted": "petitioner",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-DHC-DLHC010614922013",
+      "actual": "accused",
+      "predicted": "accused",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-DHC-DLHC010029692013",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-DHC-DLHC011058852016",
+      "actual": "accused",
+      "predicted": "petitioner",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-DHC-DLHC012541422014",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-DHC-DLHC012440582016",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-DHC-DLHC010440622015",
+      "actual": "respondent",
+      "predicted": "respondent",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-DHC-DLHC011594232016",
+      "actual": "petitioner",
+      "predicted": "respondent",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020034182022",
+      "actual": "accused",
+      "predicted": "accused",
+      "correct": true
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020481512022",
+      "actual": "petitioner",
+      "predicted": "accused",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020380352022",
+      "actual": "accused",
+      "predicted": "state_prosecution",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020000012005",
+      "actual": "accused",
+      "predicted": "state_prosecution",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020265642022",
+      "actual": "state_prosecution",
+      "predicted": "petitioner",
+      "correct": false
+    },
+    {
+      "case_id": "OIL-AHC-UPHC020001822015",
+      "actual": "accused",
+      "predicted": "accused",
+      "correct": true
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "corpusName": "Jurist-AI Unified Indian Legal Precedent Corpus",
+  "manifestVersion": "v1.4.0-unified",
+  "buildTimestamp": "2026-11-13T14:10:26.627762Z",
+  "totalInputRecords": 177,
+  "totalUniqueRecords": 176,
+  "totalDeduplicatedRecords": 1,
+  "sourceBreakdown": {
+    "indian_judgments_landmark": 27,
+    "open_india_law_sample": 149
+  },
+  "courtBreakdown": {
+    "Supreme Court of India": 74,
+    "High Court of Delhi": 50,
+    "High Court of Bombay": 1,
+    "High Court of Judicature at Allahabad": 51
+  },
+  "categoryBreakdown": {
+    "Constitutional Law": 33,
+    "Cyber & Information Technology Law": 1,
+    "Criminal Law": 131,
+    "Family Law": 1,
+    "Banking & Negotiable Instruments": 2,
+    "Labour & Service Law": 1,
+    "Corporate & Commercial Law": 4,
+    "Civil Law": 1,
+    "Arbitration & Dispute Resolution": 1,
+    "Banking & Cheque Dishonour": 1
+  },
+  "diagnostics": {
+    "minJudgmentTextLength": 272,
+    "maxJudgmentTextLength": 40000,
+    "meanJudgmentTextLength": 11314.8,
+    "minSummaryLength": 187,
+    "maxSummaryLength": 595,
+    "meanSummaryLength": 418.2,
+    "recordsWithEmptyProvisions": 47
+  },
+  "sourceFiles": {
+    "landmark": {
+      "path": "app\\datasets\\indian_judgments.json",
+      "count": 27,
+      "sha256": "4c12413790bda140433695ce83fbb6a8c66542db86dc1fbc33646fe11409f849"
+    },
+    "openIndiaLaw": {
+      "path": "app\\datasets\\open_india_law_sample_150.json",
+      "count": 150,
+      "sha256": "006ea5b5bff63dc5e6423bf44273ae0a0dd23b557d22b7595212c8b8d19bf42b"
+    }
+  },
+  "deduplicationDecisions": [
+    {
+      "excludedId": "OIL-DHC-DLHC012615072014",
+      "reason": "Identical judgment text hash (6dc94155d44c...) to primary record 'OIL-DHC-DLHC010440622015'. Connected batch proceeding.",
+      "retainedId": "OIL-DHC-DLHC010440622015",
+      "title": "W.P.(C)/9114/2014 of RAM PHAL Vs GOVERNMENT OF NCT OF DELHI & ANR."
+    }
+  ]
+}

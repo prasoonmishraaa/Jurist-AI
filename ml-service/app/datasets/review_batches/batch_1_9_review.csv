@@ -1,0 +1,17 @@
+case_id,case_title,court,judgment_date,proceeding_type,review_status,human_approved_label,human_successful_party,evidence,evidence_offset_start,evidence_offset_end,reviewer_reference,human_notes,target_model_a_eligible,target_model_b_eligible
+OIL-SC-1955_INSC_31,"MESSRS CHATTURAM HORILRAM LTD. versus COMMISSIONER OF INCOME TAX, BIHAR AND ORISSA.",Supreme Court of India,1955-04-18,civil_appeal,staged_pending_authorization,appeal_dismissed,respondent,"Thr appeal accordingly fails and is,dismissed with costs.",33028,33085,SNR-LEGAL-NLP-01,"Income tax escaped assessment under Section 34 of Indian Income-tax Act 1922 for assessment year 1939-40 in Chota Nagpur. Supreme Court upheld validity of assessment and answered reference in favour of Revenue, dismissing assessee appeal with costs.",True,True
+OIL-SC-1994_INSC_388,"M/S NOVOPAN INDIA LTD., HYDERABAD versus COLLECTOR OF CENTRAL EXCISE AND CUSTOMS, HYDERABAD",Supreme Court of India,1994-09-14,civil_appeal,staged_pending_authorization,appeal_dismissed,respondent,"G It is obvious that on the dismissal of this appeal, the aforesaid order comes to an end. The appellant has to pay the arrears of duty due according to law. It shall also be open to the respondents to cncash the bank guarantees for the said purpose. ·
+
+G.N.
+
+Appeal dismissed.",28363,28640,SNR-LEGAL-NLP-01,"Central Excise Tariff Item 15A(2) vs Item 68 exemption for resin surfaced particle boards under Notification 55/75-CE. Supreme Court held exemptions must be strictly construed, dismissing assessee appeal with directions to pay duty arrears and encash bank guarantees.",True,True
+OIL-SC-1968_INSC_212,CHOCKALINGA SETHURAYAR & ORS. versus ARUMANAYAKAM,Supreme Court of India,1968-08-28,civil_appeal,staged_pending_authorization,appeal_dismissed,respondent,"C In the result this appeal fails and the same is dismissed with costs.
+
+Y.P.
+
+Appeal dismissed.",16527,16623,SNR-LEGAL-NLP-01,"Succession to hereditary trusteeship of religious endowment (Kattalai in Sri Subramaniaswami temple). Supreme Court held devolution of office of trustee follows ordinary rules of personal Hindu law vesting in female heirs, dismissing agnatic heirs appeal with costs.",True,True
+OIL-SC-1972_INSC_24,CHIGURUPATI VENKATA SUBBAYYA & ORS versus PALADUGA ANJAYYA & ORS.,Supreme Court of India,1972-01-24,civil_appeal,staged_pending_authorization,appeal_dismissed,respondent,"In the result this appeal fails and the same is dismissed with costs.
+
+V.P.S.
+
+Appeal dismissed.",29411,29507,SNR-LEGAL-NLP-01,"Communal grazing rights under Section 3(c) Madras Estates (Abolition and Conversion into Ryotwari) Act 1948. Supreme Court held abolition abrogated only landholder rights, preserving customary communal rights of village community and dismissing ryots appeal with costs.",True,True

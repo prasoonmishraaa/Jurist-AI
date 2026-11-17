@@ -1,0 +1,25 @@
+{
+  "modelVersion": "v1.2.0-tfidf-logreg",
+  "trainingSampleSize": 27,
+  "classDistribution": {
+    "Allowed": 26,
+    "Dismissed": 1
+  },
+  "trainAccuracy": 0.963,
+  "trainPrecision": 0.963,
+  "trainRecall": 1.0,
+  "trainF1": 0.9811,
+  "crossValAccuracy": 0.85,
+  "crossValF1": 0.85,
+  "crossValPrecision": 0.85,
+  "crossValRecall": 0.85,
+  "rocAuc": 1.0,
+  "confusionMatrix": {
+    "trueNegative": 0,
+    "falsePositive": 1,
+    "falseNegative": 0,
+    "truePositive": 26
+  },
+  "methodology": "TF-IDF N-Gram Vectorizer (1,2) + Calibrated L2 Logistic Regression with Stratified K-Fold Cross-Validation.",
+  "dataLimitation": "Initial verified corpus contains curated landmark Supreme Court and High Court judgments. The statistical estimates are evidence-based research aids and do not constitute legal certainty."
+}

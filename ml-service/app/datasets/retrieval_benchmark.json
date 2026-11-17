@@ -1,0 +1,228 @@
+[
+  {
+    "queryId": "BENCH-Q01",
+    "query": "Accused arrested in an alleged cheating matter without being furnished written grounds of arrest at the time of arrest and remanded to custody in violation of Article 22(1)",
+    "domain": "Criminal Law",
+    "targetAspect": "Arrest, written grounds, remand invalidity",
+    "relevantJudgmentIds": [
+      "SC-2025-026",
+      "SC-2025-027",
+      "SC-2024-025",
+      "SC-2023-024"
+    ],
+    "relevanceGrading": {
+      "SC-2025-026": 2,
+      "SC-2025-027": 2,
+      "SC-2024-025": 1,
+      "SC-2023-024": 1
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Vihaan Kumar (SC-2025-026) and Mihir Rajesh Shah (SC-2025-027) establish that failure to furnish written grounds of arrest in ordinary IPC/BNS cases invalidates arrest and remand under Article 22(1) and S. 50 CrPC / S. 47 BNSS. Prabir Purkayastha (SC-2024-025) and Pankaj Bansal (SC-2023-024) provide foundational Article 22(1) ratio."
+  },
+  {
+    "queryId": "BENCH-Q02",
+    "query": "Application for regular bail in an offence punishable under 7 years where accused cooperated with investigation and satisfies triple test of not being flight risk",
+    "domain": "Criminal Law",
+    "targetAspect": "Bail jurisprudence, Section 41A compliance, personal liberty",
+    "relevantJudgmentIds": [
+      "SC-2022-023",
+      "SC-1978-014"
+    ],
+    "relevanceGrading": {
+      "SC-2022-023": 2,
+      "SC-1978-014": 2
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Satender Kumar Antil (SC-2022-023) lays down comprehensive bail guidelines for Category A offences (<=7 years) and S. 41A CrPC compliance. Babu Singh (SC-1978-014) establishes foundational 'bail, not jail' constitutional principle under Article 21."
+  },
+  {
+    "queryId": "BENCH-Q03",
+    "query": "Police officer refuses to register First Information Report under Section 154 despite written complaint disclosing cognizable offence",
+    "domain": "Criminal Law",
+    "targetAspect": "Mandatory FIR registration, cognizable offence, preliminary inquiry",
+    "relevantJudgmentIds": [
+      "SC-2013-004"
+    ],
+    "relevanceGrading": {
+      "SC-2013-004": 2
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Constitution Bench in Lalita Kumari (SC-2013-004) mandates that registration of FIR is mandatory under Section 154 of the Code if the information discloses commission of a cognizable offence."
+  },
+  {
+    "queryId": "BENCH-Q04",
+    "query": "Violation of mandatory arrest procedure custodial violence failure to prepare arrest memo and inform family under Article 21 and 22",
+    "domain": "Criminal Law",
+    "targetAspect": "Custodial safeguards, arrest memo, Article 21 and 22",
+    "relevantJudgmentIds": [
+      "SC-1996-012",
+      "SC-1978-010"
+    ],
+    "relevanceGrading": {
+      "SC-1996-012": 2,
+      "SC-1978-010": 1
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "D.K. Basu (SC-1996-012) mandates 11 custodial guidelines including arrest memo, inspection memo, relative intimation, and medical examination. Maneka Gandhi (SC-1978-010) establishes fair, just and reasonable procedural due process."
+  },
+  {
+    "queryId": "BENCH-Q05",
+    "query": "Mechanical arrest of husband and relatives under Section 498A IPC without prior notice of appearance under Section 41A CrPC",
+    "domain": "Criminal Law",
+    "targetAspect": "Matrimonial cruelty, Section 498A pre-arrest scrutiny, Section 41A notice",
+    "relevantJudgmentIds": [
+      "SC-2014-003",
+      "SC-2022-023"
+    ],
+    "relevanceGrading": {
+      "SC-2014-003": 2,
+      "SC-2022-023": 1
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Arnesh Kumar (SC-2014-003) prohibits mechanical arrest under S. 498A IPC and mandates S. 41A notice checklist. Satender Kumar Antil (SC-2022-023) reiterates adherence as mandatory for all offences punishable up to 7 years."
+  },
+  {
+    "queryId": "BENCH-Q06",
+    "query": "Quashing of criminal proceedings under Section 482 CrPC where FIR arises purely from civil commercial breach of contract without dishonest intention at inception",
+    "domain": "Criminal Law",
+    "targetAspect": "Quashing FIR, commercial civil dispute given criminal colour, abuse of process",
+    "relevantJudgmentIds": [
+      "SC-1990-009"
+    ],
+    "relevanceGrading": {
+      "SC-1990-009": 2
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "State of Haryana v. Bhajan Lal (SC-1990-009) sets forth the 7 landmark categories for quashing criminal proceedings under S. 482 CrPC / Art. 226, specifically where commercial breaches lack criminal ingredients."
+  },
+  {
+    "queryId": "BENCH-Q07",
+    "query": "Dishonour of cheque under Section 138 Negotiable Instruments Act drawer signed blank security cheque and claims statutory presumption under Section 139 is rebutted",
+    "domain": "Banking & Negotiable Instruments",
+    "targetAspect": "Section 138/139 NI Act, blank signed cheque, statutory presumption rebuttal",
+    "relevantJudgmentIds": [
+      "SC-2019-007",
+      "SC-2010-008"
+    ],
+    "relevanceGrading": {
+      "SC-2019-007": 2,
+      "SC-2010-008": 2
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Bir Singh v. Mukesh Kumar (SC-2019-007) holds that voluntary signing of blank cheque attracts S. 139 presumption of debt. Rangappa v. Sri Mohan (SC-2010-008) settles that reverse burden under S. 139 requires proof on preponderance of probabilities."
+  },
+  {
+    "queryId": "BENCH-Q08",
+    "query": "State surveillance bulk interception of telecommunication metadata and phone tapping infringing fundamental right to privacy under Article 21 and proportionality standard",
+    "domain": "Constitutional Law",
+    "targetAspect": "Right to privacy, metadata surveillance, proportionality review",
+    "relevantJudgmentIds": [
+      "SC-2017-001",
+      "SC-1978-010"
+    ],
+    "relevanceGrading": {
+      "SC-2017-001": 2,
+      "SC-1978-010": 1
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Nine-Judge Constitution Bench in K.S. Puttaswamy (SC-2017-001) affirms informational privacy under Article 21 and lays down four-pronged proportionality test for state intrusion. Maneka Gandhi (SC-1978-010) supplies foundational substantive due process."
+  },
+  {
+    "queryId": "BENCH-Q09",
+    "query": "Criminal prosecution for social media post causing annoyance challenged for vagueness overbreadth and chilling effect on freedom of speech under Article 19(1)(a)",
+    "domain": "Cyber & Information Technology Law",
+    "targetAspect": "Section 66A IT Act, online speech, overbreadth, chilling effect",
+    "relevantJudgmentIds": [
+      "SC-2015-002"
+    ],
+    "relevanceGrading": {
+      "SC-2015-002": 2
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Shreya Singhal v. Union of India (SC-2015-002) struck down Section 66A of the IT Act for vagueness and unconstitutional chilling effect on Article 19(1)(a) freedom of speech."
+  },
+  {
+    "queryId": "BENCH-Q10",
+    "query": "Reference of commercial dispute to arbitration under Section 8 and Section 11 of Arbitration and Conciliation Act where landlord tenant or arbitrability is contested",
+    "domain": "Corporate & Commercial Law",
+    "targetAspect": "Arbitrability four-fold test, Section 8 and Section 11 reference",
+    "relevantJudgmentIds": [
+      "SC-2020-013"
+    ],
+    "relevanceGrading": {
+      "SC-2020-013": 2
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Vidya Drolia v. Durga Trading Corp (SC-2020-013) sets out the four-fold non-arbitrability test and rules that landlord-tenant disputes governed by Transfer of Property Act are arbitrable."
+  },
+  {
+    "queryId": "BENCH-Q11",
+    "query": "Challenge to domestic arbitral award under Section 34 of Arbitration Act on grounds of patent illegality and perversity violating public policy of India",
+    "domain": "Corporate & Commercial Law",
+    "targetAspect": "Section 34 challenge, patent illegality, public policy of India",
+    "relevantJudgmentIds": [
+      "SC-2014-020"
+    ],
+    "relevanceGrading": {
+      "SC-2014-020": 2
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Associate Builders v. DDA (SC-2014-020) defines the boundaries of 'patent illegality' and 'fundamental policy of Indian law' under Section 34, prohibiting reappreciation of evidence."
+  },
+  {
+    "queryId": "BENCH-Q12",
+    "query": "Interim injunction against deceptive similarity well known trademark infringement and dilution in commercial passing off action",
+    "domain": "Corporate & Commercial Law",
+    "targetAspect": "Trademark infringement, passing off, well-known mark, deceptive similarity",
+    "relevantJudgmentIds": [
+      "DEL-2022-016"
+    ],
+    "relevanceGrading": {
+      "DEL-2022-016": 2
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Tata Sons Pvt. Ltd. v. Hakunamatata (DEL-2022-016) affirms protection of well-known trademark against deceptive similarity, transborder goodwill dilution, and unauthorized commercial adoption."
+  },
+  {
+    "queryId": "BENCH-Q13",
+    "query": "Constitutional validity of instant triple talaq talaq-e-biddat challenged as manifestly arbitrary and violative of fundamental right to equality under Article 14",
+    "domain": "Family Law",
+    "targetAspect": "Triple talaq, manifest arbitrariness doctrine, Article 14",
+    "relevantJudgmentIds": [
+      "SC-2017-006"
+    ],
+    "relevanceGrading": {
+      "SC-2017-006": 2
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Constitution Bench in Shayara Bano v. Union of India (SC-2017-006) set aside Talaq-e-biddat (triple talaq) as manifestly arbitrary and unconstitutional under Article 14."
+  },
+  {
+    "queryId": "BENCH-Q14",
+    "query": "Constitutional challenge to criminalization of consensual adult same-sex relationships under Section 377 IPC violating Article 14 15 and 21",
+    "domain": "Constitutional Law",
+    "targetAspect": "Decriminalization Section 377, constitutional morality, LGBTQ+ rights",
+    "relevantJudgmentIds": [
+      "SC-2018-005"
+    ],
+    "relevanceGrading": {
+      "SC-2018-005": 2
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Constitution Bench in Navtej Singh Johar (SC-2018-005) read down Section 377 IPC, holding criminalization of consensual adult same-sex conduct violates Articles 14, 15, 19, and 21."
+  },
+  {
+    "queryId": "BENCH-Q15",
+    "query": "Workplace sexual harassment of women employee guidelines enforcement of fundamental rights under Article 14 19 and 21 in absence of enacted legislation",
+    "domain": "Labour & Service Law",
+    "targetAspect": "Workplace sexual harassment, Vishaka guidelines, gender equality",
+    "relevantJudgmentIds": [
+      "SC-1997-011"
+    ],
+    "relevanceGrading": {
+      "SC-1997-011": 2
+    },
+    "manualReviewStatus": "manually_reviewed",
+    "reviewNotes": "Vishaka v. State of Rajasthan (SC-1997-011) formulated binding guidelines under Article 32/141 to prevent sexual harassment at workplace, utilizing CEDAW and Articles 14, 19, 21."
+  }
+]
