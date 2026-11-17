@@ -1,0 +1,34 @@
+{
+  "name": "jurist-ai-monorepo",
+  "version": "1.0.0",
+  "description": "Jurist AI - Intelligent Legal Analysis & Outcome Likelihood Estimation System",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "start:ml": "node scripts/start-ml.js",
+    "probe": "node scripts/e2e-probe.js",
+    "build": "npm run build --workspace=backend && npm run build --workspace=frontend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend",
+    "test": "npm run test --workspace=backend && npm run test --workspace=frontend",
+    "test:backend": "npm run test --workspace=backend",
+    "test:frontend": "npm run test --workspace=frontend",
+    "test:ml": "node scripts/run-ml-tests.js",
+    "lint": "npm run lint --workspace=frontend",
+    "seed": "npm run seed --workspace=backend"
+  },
+  "keywords": [
+    "legal-ai",
+    "nlp",
+    "precedent-retrieval",
+    "indian-law",
+    "legaltech"
+  ],
+  "author": "Jurist-AI Engineering Team",
+  "license": "MIT"
+}
